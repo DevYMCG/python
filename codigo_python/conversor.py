@@ -1,23 +1,25 @@
-# pesos = input("¿Cuántos pesos colombianos tienes?: ")
-# pesos = float(pesos)
-# valor_dolar = 3875
-# dolares = pesos / valor_dolar
-# print("Tienes $"+ str(round(dolares, 2)) + " dólares")
+menu = """
+Bienvenidos al conversor de monedas
 
-# dolares = input("¿Cuántos dolares tienes?: ")
-# dolares = float(dolares)
-# valor_peso_colombiano = 3875
-# pesos = dolares*valor_peso_colombiano
-# print("Tienes COP "+ str(pesos)+ " colombianos")
+1- Pesos Colombianos
+2- Pesos argentinos
+3- Pesos mexicanos
 
-opcion = input("¿Deseas: opc1: pesos-dolares opc2: dolares-pesos? (Responde opc1 o opc2): ")
-if opcion == "opc1":
-    pesos = float(input("¿Cuántos pesos tienes?: "))
-    valor_dolar = 3.800
+Elige una opción: """
+
+opcion = int(input(menu))
+
+if opcion == 1:
+    pesos = float(input("¿Cuántos pesos colombianos tienes?: "))
+    valor_dolar = 3875
     print("Tienes $"+ str(round(pesos / valor_dolar, 2)) + " dólares. ")
-elif opcion == "opc2":
-    dolares = float(input("¿Cuántos dolares tienes?: "))
-    valor_peso = 3.800
-    print("Tienes COP "+ str(round(dolares * valor_peso, 2)) + " pesos. ")
+elif opcion == 2:
+    pesos = float(input("¿Cuántos pesos argentinos tienes?: "))
+    valor_dolar = 65
+    print("Tienes $"+ str(round(pesos / valor_dolar, 2)) + " dólares. ")
+elif opcion == 3:
+    pesos = float(input("¿Cuántos pesos mexicanos tienes?: "))
+    valor_dolar = 24
+    print("Tienes $"+ str(round(pesos / valor_dolar, 2)) + " dólares. ")
 else:
-    print("Escribe sólo opc1 o opc2, por favor. ")
+    print('Ingrese una opción correcta por favor')
