@@ -2,9 +2,7 @@ pesos = input("¿Cuántos pesos colombianos tienes?: ")
 pesos = float(pesos)
 valor_dolar = 3875
 dolares = pesos / valor_dolar
-dolares = round(dolares, 2)
-dolares = str(dolares)
-print("Tienes $"+ dolares + " dólares")
+print("Tienes $"+ str(round(dolares, 2)) + " dólares")
 
 dolares = input("¿cuantos dolares tienes?: ")
 dolares = float(dolares)
