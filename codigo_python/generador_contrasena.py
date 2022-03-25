@@ -15,6 +15,7 @@ def generar_contrasena():
         caracter_random = random.choice(caracteres)
         contrasena.append(caracter_random)
     
+    # convertir una lista a string
     contrasena = "".join(contrasena)
     return contrasena
 
