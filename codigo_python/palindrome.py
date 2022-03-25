@@ -9,5 +9,6 @@ def palindrome(nombre):
 
     return band 
 
-result = palindrome("tuberculos")
+palabra = input("Ingrese la palabra para comprobar si es palindrome: ")
+result = palindrome((palabra.lower()).strip())
 print(result)
