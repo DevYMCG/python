@@ -3,6 +3,7 @@ from pickle import TRUE
 
 def palindrome(nombre):
     band= False
+    nombre = nombre.replace(' ', '')
     alreves= nombre[::-1]
     if nombre == alreves:
         band= True
