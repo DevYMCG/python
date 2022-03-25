@@ -2,14 +2,14 @@ import random
 
 
 def buscar_numero():
-    rand = random.randint(1,100)
+    numero_aleatorio = random.randint(1,100)
     numero = int(input("Elige un número del 1 al 100: "))
 
     while True:
 
-        if numero == rand:
+        if numero == numero_aleatorio:
             break
-        elif(numero < rand):
+        elif(numero < numero_aleatorio):
             print("Busca un número más grande")
         else:
             print("Busca un número más pequeño")
