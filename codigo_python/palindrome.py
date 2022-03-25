@@ -1,15 +1,20 @@
-from operator import truediv
-from pickle import TRUE
-
 def palindrome(nombre):
-    band= False
     nombre = nombre.replace(' ', '')
     alreves= nombre[::-1]
     if nombre == alreves:
-        band= True
+        return True
 
-    return band 
+    return False 
 
-palabra = input("Ingrese la palabra para comprobar si es palindrome: ")
-result = palindrome((palabra.lower()).strip())
-print(result)
+
+def run():
+    palabra = input("Ingrese la palabra para comprobar si es palindrome: ")
+    es_palindromo = palindrome((palabra.lower()).strip())
+    if es_palindromo == True:
+        print("Es palíndromo")
+    else:
+        print("No es palíndromo")
+
+
+if __name__ == '__main__':
+    run()
