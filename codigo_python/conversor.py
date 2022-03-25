@@ -1,4 +1,5 @@
-def resultado(valor_dolar, pesos):
+def resultado(tipo_pesos, valor_dolar):
+    pesos = float(input("¿Cuántos "+ tipo_pesos+" tienes?: "))
     print("Tienes $"+ str(round(pesos / valor_dolar, 2)) + " dólares. ")
 
 menu = """
@@ -13,13 +14,10 @@ Elige una opción: """
 opcion = int(input(menu))
 
 if opcion == 1:
-    pesos = float(input("¿Cuántos pesos colombianos tienes?: "))
-    resultado(3875, pesos)
+    resultado("pesos colombianos",3875)
 elif opcion == 2:
-    pesos = float(input("¿Cuántos pesos argentinos tienes?: "))
-    resultado(65, pesos)
+    resultado("pesos argentinos",65)
 elif opcion == 3:
-    pesos = float(input("¿Cuántos pesos mexicanos tienes?: "))
-    resultado(24, pesos)
+    resultado("pesos mexicanos",24)
 else:
     print('Ingrese una opción correcta por favor')
