@@ -12,6 +12,30 @@ class CajaNegraTest(unittest.TestCase):
         resultado = suma(num_1, num_2)
 
         self.assertEqual(resultado, 15)
+    
+    def test_suma_dos_negativos(self):
+        num_1 = -10
+        num_2 = -5
+
+        resultado = suma(num_1, num_2)
+
+        self.assertEqual(resultado, -15)
+    
+    def test_suma_uno_positivo_uno_negativo(self):
+        num_1 = 10
+        num_2 = -5
+
+        resultado = suma(num_1, num_2)
+
+        self.assertEqual(resultado, 5)
+    
+    def test_suma_uno_negativo_uno_positivo(self):
+        num_1 = -10
+        num_2 = 5
+
+        resultado = suma(num_1, num_2)
+
+        self.assertEqual(resultado, -5)
 
 if __name__ == '__main__':
     unittest.main()
