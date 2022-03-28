@@ -138,7 +138,8 @@ def run():
 
     # list comprehensions
 
-    old_people = [worker["name"] for worker in DATA if worker["age"] > 70]
+    # old_people = [worker["name"] for worker in DATA if worker["age"] > 70]
+    old_people = [{**worker, **{'old': worker['age'] > 70}} for worker in DATA]
 
     print(old_people)
 
