@@ -16,8 +16,16 @@ def run():
         "floating_nums": [1.1, 4.5, 6.43]
     }
 
+    """
+        Imprimir valores de un diccionario
+    """
+
     # for key, value in super_dict.items():
     #     print(key, "-", value)
+
+    """
+        Imprimir valores de una lista
+    """
 
     for values in super_list:
         for key, value in values.items():
