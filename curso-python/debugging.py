@@ -9,6 +9,7 @@ def divisors(num):
         return divisors
     except ValueError as ve:
         print(ve)
+        return False
 
 
 
