@@ -9,14 +9,22 @@ def imprimir(lista):
 
 
 def gano(lista, palabra):
-    palabras = ""
+
+    """
+        Metodo que me permite comparar
+        si los elementos que esta en la
+        lista coinciden con los del
+        string 'palabra'
+    """
+
+    lista_palabra = ""
 
     for letra in lista:
-        palabras = palabras + letra
+        lista_palabra = lista_palabra + letra
     
-    palabras = palabras.replace(' ', '')
+    lista_palabra = lista_palabra.replace(' ', '')
 
-    if palabras == palabra:
+    if lista_palabra == palabra:
         return 0
     
     return 1
@@ -68,7 +76,7 @@ def run():
     """
         leer del archivo data.txt las palabras
         que se encuentran y guardarlas en una
-        lista, escoger una palabra aleatoria
+        lista
     """
     with open("./archivos/data.txt", "r", encoding="utf-8") as f:
         for line in f:
