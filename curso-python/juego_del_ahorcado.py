@@ -1,3 +1,4 @@
+from dataclasses import replace
 from operator import concat
 import random
 
@@ -9,7 +10,6 @@ def imprimir(lista):
 
 def gano(lista, palabra):
     palabras = ""
-    palabra = palabra.replace('\n', '')
 
     for letra in lista:
         palabras = palabras + letra
@@ -25,9 +25,9 @@ def gano(lista, palabra):
 
 def adivina_palabra(palabra, lista):
 
-    ganar = 1
+    band = 1
     
-    while ganar == 1:
+    while band == 1:
         pedir_letra = input("\n Ingresa una letra: ")
         posicion = 0
         
@@ -38,16 +38,23 @@ def adivina_palabra(palabra, lista):
             posicion+=1;  
 
         imprimir(lista)
-        ganar = gano(lista, palabra)
+        band = gano(lista, palabra)
 
     print("\n¡Ganaste! la palabra era", palabra)
 
 
 
 def paint(palabra): 
+
+    """
+     metodo para pintar (-) segun la 
+     longitud de la palabra
+    """
+
     print("¡Adivina la palabra! " + palabra)
     lista = []
-    for letra in range(1, len(palabra)):
+    
+    for letra in range(0, len(palabra)):
         lista.append("_ ")
     
     imprimir(lista)
@@ -56,13 +63,19 @@ def paint(palabra):
 
 
 def run():
-    data = []
+    palabras = []
+
+    """
+        leer del archivo data.txt las palabras
+        que se encuentran y guardarlas en una
+        lista, escoger una palabra aleatoria
+    """
     with open("./archivos/data.txt", "r", encoding="utf-8") as f:
         for line in f:
-            data.append(line)
+            palabras.append(line)
 
-    palabra_aleatoria = random.choice(data)
-    print(" palabra = "+palabra_aleatoria)
+    palabra_aleatoria = random.choice(palabras)
+    palabra_aleatoria = palabra_aleatoria.replace('\n', '')
     paint(palabra_aleatoria)
 
 
