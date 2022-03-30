@@ -4,7 +4,7 @@ import random
 
 def imprimir(lista):
     for item in lista:
-        print(item, end="")
+        print(item.upper(), end="")
 
 
 
@@ -40,7 +40,7 @@ def adivina_palabra(palabra, lista):
         posicion = 0
         
         for letra in palabra:
-            if letra == pedir_letra:
+            if letra.lower() == pedir_letra.lower():
                 lista[posicion]=letra+" ";
 
             posicion+=1;  
@@ -60,18 +60,19 @@ def paint(palabra):
     """
 
     print("¡Adivina la palabra! " + palabra)
-    lista = []
+    # lista = []
     
-    for letra in range(0, len(palabra)):
-        lista.append("_ ")
-    
+    # for letra in range(0, len(palabra)):
+    #     lista.append("_ ")
+    lista = ["-" for letra in range(len(palabra))]
+
     imprimir(lista)
     adivina_palabra(palabra, lista)
 
 
 
 def run():
-    palabras = []
+    # palabras = []
 
     """
         leer del archivo data.txt las palabras
@@ -79,8 +80,9 @@ def run():
         lista
     """
     with open("./archivos/data.txt", "r", encoding="utf-8") as f:
-        for line in f:
-            palabras.append(line)
+        palabras = [line for line in f]
+        # for line in f:
+        #     palabras.append(line)
 
     palabra_aleatoria = random.choice(palabras)
     palabra_aleatoria = palabra_aleatoria.replace('\n', '')
