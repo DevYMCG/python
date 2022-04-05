@@ -2,9 +2,8 @@ import random
 
 def ordenamiento_por_insersion(lista):
 
-    n = len(lista) # 
-    sublista= []
-
+    n = len(lista) 
+    
     for i in range(n-1):
         if lista[i+1] < lista[i]: 
             lista[i+1], lista[i] = lista[i], lista[i+1]
