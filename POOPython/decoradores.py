@@ -1,15 +1,15 @@
-class CasillaDeVotacion:
+class CasillaDeVotacion: # Declaramos nuestra clase principal
 
-    def __init__(self, identificador, pais):
-        self.__identificador = identificador
-        self.__pais = pais
+    def __init__(self, identificador, pais): # Definimos los parametros
+        self.__identificador = identificador 
+        self.__pais = pais # Declaramos los atributos privados
         self.__region = None
     
     @property
-    def region(self):
+    def region(self): # Definimos el metodo para obtener la region
         return self.__region
     
-    @region.setter
+    @region.setter # Propiedad setter
     def region(self, region):
         if region in self.__pais:
             self.__region = region
