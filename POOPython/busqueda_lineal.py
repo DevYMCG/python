@@ -5,7 +5,7 @@ def busqueda_lineal(lista, objetivo):
     match = False
 
     for elemento in lista:
-        if elemento == objetivo:
+        if elemento == objetivo: # O(n)
             match = True
             break
     
