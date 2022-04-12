@@ -2,8 +2,8 @@
 
 ### Indice
 - [Conocer el ecocistema de selenium](#Conocer-el-ecocistema-de-selenium)
-    - [Por qué aprender Selenium y qué verás](#Por-que-aprender-Selenium-y-qué-verás)
-    - [Historia de Selenium](#conceptos-basicos)
+    - [Por qué aprender Selenium y qué verás](#Por-qué-aprender-Selenium-y-qué-verás)
+    - [Historia de Selenium](#Historia-de-Selenium)
     - [Otras herramientas de testing y automatización](#conceptos-basicos)
 - [Preparar entorno de trabajo](#introducción)
     - [Configurar entorno de trabajo](#entidades-y-atributos)
@@ -37,3 +37,12 @@
 # Conocer el ecocistema de selenium
 
 ### Por qué aprender Selenium y qué verás
+
+¿Qué aprenderas?
+
+- Entender ¿Qué es Selenium? 
+- Comunicar selenium con el navegador
+- Automatizar pruebas unitarias y funcionales
+- Generar reportes de pruebas
+
+### Historia de Selenium
