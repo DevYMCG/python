@@ -1,8 +1,8 @@
 # Introducción a selenium con Python
 
 ### Indice
-- [Conocer el ecocistema de selenium](#fundamentos-de-bases-de-datos)
-    - [Por qué aprender Selenium y qué verás](#conceptos-basicos)
+- [Conocer el ecocistema de selenium](#Conocer-el-ecocistema-de-selenium)
+    - [Por qué aprender Selenium y qué verás](#Por-que-aprender-Selenium-y-qué-verás)
     - [Historia de Selenium](#conceptos-basicos)
     - [Otras herramientas de testing y automatización](#conceptos-basicos)
 - [Preparar entorno de trabajo](#introducción)
@@ -33,3 +33,7 @@
 - [Cierre del curso](#relaciones)
     - [Realizar pruebas técnicas](#cardinalidad-1-a-1)
     - [Conclusiones](#cardinalidad-0-a-1)
+
+# Conocer el ecocistema de selenium
+
+### Por qué aprender Selenium y qué verás
