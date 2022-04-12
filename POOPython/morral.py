@@ -2,6 +2,7 @@ from unittest import result
 
 
 def morral(tamano_morral, pesos, valores, n):
+    print(f'tamano morral: {tamano_morral}, n: {n}')
     
     """
         si nos quedan elementos y nos queda
@@ -32,7 +33,7 @@ def morral(tamano_morral, pesos, valores, n):
 if __name__ == '__main__':
     valores = [60, 100, 120]
     pesos = [10, 20, 30]
-    tamano_morral = 5
+    tamano_morral = 50
     n = len(valores)
 
     result = morral(tamano_morral, pesos, valores, n)
