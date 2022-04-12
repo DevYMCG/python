@@ -51,11 +51,11 @@
 
 Es compatible con diversos navegadores web como:
 
-![src/navegadore_web.JPG](src/navegadore_web.JPG)
+![src/navegadore_web.jpg](src/navegadore_web.jpg)
 
 Actualmente selenium es compatible con distintos lenguajes de programación
 
-![src/lenguajes.JPG](src/lenguajes.JPG)
+![src/lenguajes.jpg](src/lenguajes.jpg)
 
 Selenium No es una herramienta de 
 - Testing
