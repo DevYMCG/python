@@ -38,7 +38,7 @@
 
 ### Por qué aprender Selenium y qué verás
 
-¿Qué aprenderas?
+**¿Qué aprenderas?**
 
 - Entender ¿Qué es Selenium? 
 - Comunicar selenium con el navegador
@@ -46,3 +46,80 @@
 - Generar reportes de pruebas
 
 ### Historia de Selenium
+
+**¿Qué es Selenium?:** "Suite de herramientas para automatización de navegadores".
+
+Es compatible con diversos navegadores web como:
+
+![src/navegadore_web.JPG](src/navegadore_web.JPG)
+
+Actualmente selenium es compatible con distintos lenguajes de programación
+
+![src/lenguajes.JPG](src/lenguajes.JPG)
+
+Selenium No es una herramienta de 
+- Testing
+- Web Scraping
+
+**Todo comienza en 2004**
+
+- Jason Huggins buscaba automatizar pruebas manuales, creando asi una aplicación llamada "JavaScriptTestRunner". Despues llamada "Selenium Core"
+
+- Paul Hammant vio el demo y buscó una solución a la "Same Origin Policy" y creo "Selenium RC".
+
+- Shinya Katasani en Japón envolvió el código de Selenium convirtiéndolo en un plugin para Firefox.
+
+- Selenium IDE es capaz de grabar, repetir, importar y esportar automatizaciones
+
+- Simon Stewart trabajó en varias herramientas llamadas "WebDriver". Reemplazando JS por un cliente para cada navegador y una API de alto nivel.
+
+- Selenium RC se fusionó a este proyecto, dando lugar a Selenium WebDriver.
+
+**Características, pros y contras**
+
+**Selenium IDE**
+
+**Pros**
+- Excelente para iniciar
+- No require saber programar
+- Exporta scripts para Selenium RC y Selenium WwebDriver
+- Genera reportes
+
+**Contras**
+- Disponible solo para Firefox y chrome
+- No soporta DDT
+
+**Selenium RC**
+
+**Pros**
+- Soporta para: 
+    - Varias plataformas, navegadores y lenguajes
+    - Operaciones logicas y condicionales
+    - DDT
+- Posee una API madura
+
+**Contras**
+- Complejo de instalar
+- Necesita de un servidor corriendo
+- Comandos redundantes en su API
+- Navegación no tan realista
+
+**Selenium WebDriver**
+
+**Pros**
+- Soporta para múltiples lenguajes
+- Fácil de instalar
+- Comunicación directa con el navegador
+- Interacción más realista
+
+**Contras**
+- No soportan nuevos navegadores tan rápido
+- No genera reportes o resultados de pruebas
+- Requiere de saber programar
+
+**Selenium Grid**
+
+**características**
+- Se utiliza junto a Selenium RC
+- Permite correr pruebas en paralelo
+- Conveniente para ahorrar tiempo
