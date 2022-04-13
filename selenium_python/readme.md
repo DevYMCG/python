@@ -4,8 +4,8 @@
 - [Conocer el ecocistema de selenium](#Conocer-el-ecocistema-de-selenium)
     - [Por qué aprender Selenium y qué verás](#Por-qué-aprender-Selenium-y-qué-verás)
     - [Historia de Selenium](#Historia-de-Selenium)
-    - [Otras herramientas de testing y automatización](#conceptos-basicos)
-- [Preparar entorno de trabajo](#introducción)
+    - [Otras herramientas de testing y automatización](#Otras-herramientas-de-testing-y-automatización)
+- [Preparar entorno de trabajo](#Preparar-entorno-de-trabajo)
     - [Configurar entorno de trabajo](#entidades-y-atributos)
     - [Compatibilidad con python 3.9 y aprendiendo a utilizar múltiples versiones](#atributos)
     - [¡Hola, mundo!](#entidades)
@@ -123,3 +123,47 @@ Selenium No es una herramienta de
 - Se utiliza junto a Selenium RC
 - Permite correr pruebas en paralelo
 - Conveniente para ahorrar tiempo
+
+### Otras herramientas de testing y automatización
+
+**Puppeteer**
+
+**Pros**
+
+- Soporte por parte de Google
+- Datos del Performance Analysis de Chrome
+- Mayor control de Chrome
+- No requiere de drivers externos
+
+**Contras**
+
+- Funciona solo en Chrome con JavaScript
+- Comunidad pequeña
+
+**Cypress.io**
+
+**Pros**
+- Comunidad emergente
+- Buena documentación con ejemplos
+- Bastante ágil en pruebas E2E
+- Orientado a desarrolladores
+- Excelente manejo de asincronismo
+
+**Contras**
+- Funciona solo en Chrome y con JavaScript
+- Pruebas en paralelo solo en versión pago
+
+# Preparar entorno de trabajo
+
+### Configurar entorno de trabajo
+
+![src/instalaciones.PNG](src/instalaciones.PNG)
+
+Para ver la version que tenemos instalada de python en windows usamos el comando: py --version
+
+Pasos
+ - Creamos un ambiente virtual ejecutando los comandos a continuación, y usamos pip para descargar paquetes para instalar selenium y pyunitreport
+
+  ![src/creamos_ambiente_virtual.PNG](src/creamos_ambiente_virtual.PNG)
+  ![src/descargando_librerias.PNG](src/descargando_librerias.PNG)
+
