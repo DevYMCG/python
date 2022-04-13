@@ -387,6 +387,6 @@ Sitio web con la que vamos a realizar nuestras pruebas http://demo-store.seleniu
 
 - Encontrar elementos: Para encontrarlos podemos hacer uso de nuestro inspector en el navegador web.
 
-![src/paso_1.PNG](src/paso_1.PNG)
+![src/paso_1.png](src/paso_1.png)
 
 - Escribir codigo para poder acceder a esta barra de busqueda.
