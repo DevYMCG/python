@@ -390,3 +390,8 @@ Sitio web con la que vamos a realizar nuestras pruebas http://demo-store.seleniu
 ![src/paso_1.png](src/paso_1.png)
 
 - Escribir codigo para poder acceder a esta barra de busqueda.
+
+> observar el archivo searchtests.py adjunto.
+
+![src/no_tenemos_id_class.png](src/no_tenemos_id_class.png)
+![src/copiar_por_xpath.png](src/copiar_por_xpath.png)
