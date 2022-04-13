@@ -397,3 +397,19 @@ Caso especial cuando no tenemos **id** ni **class** para referenciar un elemento
 
 ![src/no_tenemos_id_class.png](src/no_tenemos_id_class.png)
 ![src/copiar_por_xpath.png](src/copiar_por_xpath.png)
+
+### Preparar assertions y test suites
+
+Podemos hacer uso de assertions y test suites para que nuestras pruebas sean mas efectivas
+
+**Assertions**
+
+Método que permiten validar un valor esperando en la ejecución del test. Si el resultado en la ejecución del test. si el resultado es verdadero el test continúa, en caso contrario "falla" y termina.
+
+> **Ejemplo: ** AssertEqual(price.text, "300")
+
+**Test suites**
+
+Colección de test unificados en una sola prueba, permitiendo tener resultados grupales e individuales.
+
+![src/test_suite.PNG](src/test_suite.PNG)
