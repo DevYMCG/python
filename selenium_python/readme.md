@@ -379,6 +379,14 @@ Si el sitio de práctica no abre, puedes intentar ingresando a OneStepCheckout R
 
 - Selectores: Es a traves de los selectores que vamos a poder realizar las acciones para nuestras pruebas
 
-![src/estructura_sitio_web.PNG](src/estructura_sitio_web.PNG)
+![src/selectores.PNG](src/selectores.PNG)
 
-página con la que vamos a realizar nuestras pruebas http://demo-store.seleniumacademy.com/
+Sitio web con la que vamos a realizar nuestras pruebas http://demo-store.seleniumacademy.com/ Madison Islan un ecommerce perfecto para practicar nuestras pruebas de autoatización
+
+**Pasos**
+
+- Encontrar elementos: Para encontrarlos podemos hacer uso de nuestro inspector en el navegador web.
+
+![src/paso_1.PNG](src/paso_1.PNG)
+
+- Escribir codigo para poder acceder a esta barra de busqueda.
