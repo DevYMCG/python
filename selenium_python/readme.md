@@ -364,3 +364,5 @@ Pasos:
 ![src/descargar_driver.png](src/descargar_driver.png)
 
 Este archivo es el que nos ayudara a comunicar selenium con el navegador a tráves del código.
+
+> observar el archivo hello_word.py adjunto.
