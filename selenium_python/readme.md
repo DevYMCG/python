@@ -344,3 +344,23 @@ Podemos utilizar pyenv versions y pyenv which python para darnos cuenta de que e
 Incluso ahora podemos instalar Selenium de una forma aislada con el comando pip install selenium.
 
 Para salir de nuestro entorno solo ejecutamos el comando `pyenv deactivate` y para activarlo de nuevo con pyenv activate nombre_del_entorno.
+
+### ¡Hola, mundo!
+
+Unittest (PyTest)
+
+- **Test Fixture:** preparaciones para antes y después de la prueba
+- **Test Case:** Unidad de codigo a probar.
+- **Test Suite:** Colección de Test Cases.
+- **Test Runner:** Orquestador de la ejecución
+- **Test Report:** Resumen de resultados
+
+<abbr>Para comunicar a selenium con el navegador debemos instalar el driver correspondiente</abbr>
+
+Pasos:
+
+- Buscar en Google chrome el driver chromedriver
+
+![src/descargar_driver.png](src/descargar_driver.png)
+
+Este archivo es el que nos ayudara a comunicar selenium con el navegador a tráves del código.
