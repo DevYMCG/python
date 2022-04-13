@@ -159,10 +159,14 @@ Selenium No es una herramienta de
 
 ![src/instalaciones.PNG](src/instalaciones.PNG)
 
-Para ver la version que tenemos instalada de python en windows usamos el comando: py --version
-
 Pasos
- - Creamos un ambiente virtual ejecutando los comandos a continuación, y usamos pip para descargar paquetes para instalar selenium y pyunitreport
+- Para ver la version que tenemos instalada de python en windows usamos el comando: py --version
+
+- Creamos un ambiente virtual ejecutando los comandos a continuación, y usamos pip para descargar paquetes para instalar selenium y pyunitreport
 
 ![src/creamos_ambiente_virtual.PNG](src/creamos_ambiente_virtual.PNG)
 ![src/descargando_librerias.PNG](src/descargando_librerias.PNG)
+
+- pip freeze muestra todos los paquetes instalados en tu ambiente virtual
+
+![src/librerias_descargadas.PNG](src/librerias_descargadas.PNG)
