@@ -16,8 +16,8 @@ class HelloWord(unittest.TestCase):
         @Ejecuta todo lo necesario antes de hacer una
         prueba es decir prepara el entorno de la prueba
 
-        @classmethod nos ayuda para que la ventana del navegador
-        no se este cerrando
+        @classmethod # Decorador para que las distintas
+        paginas corran en una sola pestaña
 
     """
     @classmethod
@@ -28,7 +28,7 @@ class HelloWord(unittest.TestCase):
     
     """
         @caso de prueba, se van a ejecutar una serie de
-        acciones para que el navegado los realice
+        acciones para que el navegador los realice
     """
     
     def test_hello_word(self):
