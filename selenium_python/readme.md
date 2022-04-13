@@ -413,3 +413,6 @@ Método que permiten validar un valor esperando en la ejecución del test. Si el
 Colección de test unificados en una sola prueba, permitiendo tener resultados grupales e individuales.
 
 ![src/test_suite.PNG](src/test_suite.PNG)
+
+**ver archivos**
+>assertions.py - searchtests.py y nuestro test suite smoketests.py 
