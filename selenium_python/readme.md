@@ -156,3 +156,13 @@ Selenium No es una herramienta de
 # Preparar entorno de trabajo
 
 ### Configurar entorno de trabajo
+
+![src/instalaciones.PNG](src/instalaciones.PNG)
+
+Para ver la version que tenemos instalada de python en windows usamos el comando: py --version
+
+Pasos
+ - Creamos un ambiente virtual ejecutando los comandos a continuación, y usamos pip para descargar paquetes para instalar selenium y pyunitreport
+
+![src/creamos_ambiente_virtual.PNG](src/creamos_ambiente_virtual.PNG)
+![src/descargando_librerias.PNG](src/descargando_librerias.PNG)
