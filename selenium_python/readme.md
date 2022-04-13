@@ -391,7 +391,7 @@ Sitio web con la que vamos a realizar nuestras pruebas http://demo-store.seleniu
 
 - Escribir codigo para poder acceder a esta barra de busqueda.
 
-> observar el archivo searchtests.py adjunto.
+> observar el archivo HomePageTest.py adjunto.
 
 Caso especial cuando no tenemos **id** ni **class** para referenciar un elemento, tenemos la opción de usar **xpath**
 

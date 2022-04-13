@@ -19,6 +19,9 @@ class AssertionsTest(unittest.TestCase):
     def test_search_field(self):
         self.assertTrue(self.is_element_present(By.NAME, 'q'))
     
+    """
+        Identificar si el id del lenguaje esta presente
+    """
     def test_language_option(self):
         self.assertTrue(self.is_element_present(By.ID, 'select-language'))
 
@@ -30,10 +33,13 @@ class AssertionsTest(unittest.TestCase):
         de acuerdo a sus parametros
     """
     def is_element_present(self, how, what):
+        # how tipo de selector
+        # what valor que tiene
         try:
             self.driver.find_element(by = how , value= what)
         except NoSuchElementException as variable:
             return False
+
         return True
 
 
