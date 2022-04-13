@@ -366,3 +366,19 @@ Pasos:
 Este archivo es el que nos ayudara a comunicar selenium con el navegador a tráves del código.
 
 > observar el archivo hello_word.py adjunto.
+
+### Encontrar elementos con find_element
+
+En ocasiones algunos sitios pueden tener bloqueos regionales o no estar disponibles por la alta cantidad de solicitudes que llegan a tener.
+
+Si el sitio de práctica no abre, puedes intentar ingresando a OneStepCheckout Responsive Demo.
+
+- Estructura de un sitio web
+
+![src/estructura_sitio_web.PNG](src/estructura_sitio_web.PNG)
+
+- Selectores: Es a traves de los selectores que vamos a poder realizar las acciones para nuestras pruebas
+
+![src/estructura_sitio_web.PNG](src/estructura_sitio_web.PNG)
+
+página con la que vamos a realizar nuestras pruebas http://demo-store.seleniumacademy.com/
