@@ -393,7 +393,7 @@ Sitio web con la que vamos a realizar nuestras pruebas http://demo-store.seleniu
 
 > observar el archivo searchtests.py adjunto.
 
-Caso especial cuando no tenemos id ni class para referenciar un elemento, tenemos la opción de usar xatph
+Caso especial cuando no tenemos **id** ni **class** para referenciar un elemento, tenemos la opción de usar **xpath**
 
 ![src/no_tenemos_id_class.png](src/no_tenemos_id_class.png)
 ![src/copiar_por_xpath.png](src/copiar_por_xpath.png)
