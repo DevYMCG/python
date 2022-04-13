@@ -5,7 +5,7 @@
     - [Por qué aprender Selenium y qué verás](#Por-qué-aprender-Selenium-y-qué-verás)
     - [Historia de Selenium](#Historia-de-Selenium)
     - [Otras herramientas de testing y automatización](#Otras-herramientas-de-testing-y-automatización)
-- [Preparar entorno de trabajo](#Preparar-entorno-de trabajo)
+- [Preparar entorno de trabajo](#Preparar-entorno-de-trabajo)
     - [Configurar entorno de trabajo](#entidades-y-atributos)
     - [Compatibilidad con python 3.9 y aprendiendo a utilizar múltiples versiones](#atributos)
     - [¡Hola, mundo!](#entidades)
