@@ -465,3 +465,36 @@ Esta clase nos permite interactuar específicamente con elementos de los sitios 
 | send_keys(value)	                    | Simula escribir o presionar teclas en un elemento	| email_field.send_keys(‘team@platzi.com’)
 | submit()	                            | Envía un formulario o confirmación en un text area	| search_field.submit()
 | value_of_css_property(property_name)	| Obtiene el valor de una propiedad CSS del elemento	| header.value_of_css_property(‘background-color’)
+
+### Interactuar con elementos
+
+#### Manejar form, textbox, checkbox y radio button
+
+- Inspeccionamos la cuenta account botton de la parte superior
+
+![src/account_prueba_1.png](src/account_prueba_1.png)
+
+- Como no tenemos mucha información tomamos el XPath de la propiedad
+
+![src/account_xpath_2.png](src/account_xpath_2.png)
+
+- Una vez encontrado el elemento a traves de la propiedad **find_element_by_link_text** le pedimos al driver que encuentre en el menu de opciones el texto **Log In** y hacemos click sobre el.
+
+![src/account_login_3.png](src/account_login_3.png)
+
+- Esto nos llevara a la pantalla del login de la página y ahora lo que buscaremos es el boton para crear una cuenta nueva
+
+![src/create_an_account_4.png](src/create_an_account_4.png)
+![src/account_login_5.png](src/account_login_5.png)
+
+Nota: como no tiene mucha información lo obtendremos a traves de su XPath
+
+- De forma manual si hacemos clic en el botton nos llevara al proceso de registro de cuenta, en el cual hay una serie de campos de texto donde podremos escribir nuestro nombres y demas información solicitada
+
+![src/proceso_de_registro_cuenta.png](src/proceso_de_registro_cuenta.png)
+
+- A cotinuación procedemos a inspeccionarlos para saber que poner en cada uno de ellos
+
+![src/create_an_account_5_input.png](src/create_an_account_5_input.png)
+
+> archivo adjunto correspondiente a las capturas register_new_user.py
