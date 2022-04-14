@@ -501,3 +501,9 @@ Nota: como no tiene mucha información lo obtendremos a traves de su XPath
 
 ### Manejar dropdown y listas
 
+Para poder manipular el dropdown debemos importar un nuevo submodulo de selenium
+
+> from selenium.webdriver.support.ui import Select
+
+> archivo adjunto select_language.py
+
