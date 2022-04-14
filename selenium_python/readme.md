@@ -543,3 +543,5 @@ Para poder manipular el dropdown debemos importar un nuevo submodulo de selenium
 | title_is(title)	| Espera a que la página tenga un título idéntico a como es indicado |	WebDriverWait(self.driver, 10).until(expected_conditions.title_is(“Welcome to Platzi”))
 | visibility_of(element) |	Espera a que el elemento indicado esté en el DOM, sea visible, su alto y ancho sean mayores a cero	| first_name = self.driver.find_element_by_id(“firstname”) WebDriverWait(self.driver, 10).until(expected_conditions.visibility_of(first_name))
 | visibility_of_element_located(locator)	| Espera a que el elemento indicado por su selector esté en el DOM, sea visible y que su alto y ancho sean mayores a cero |	WebDriverWait(self.driver,10).until(expected_conditions.visibility_of_element_located((By.ID,“firstname”)))
+
+### Agregar y eliminar elementos
