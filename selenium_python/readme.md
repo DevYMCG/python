@@ -569,3 +569,10 @@ Su funcionalidad varia de acuerdo al tiempo
 Validaciones para que el texto de un sitio web sea igual al esperado
 
 ![src/typos.PNG](src/typos.PNG)
+
+> archivo adjunto typos.py
+
+### Ordenar tablas
+
+![src/data_tables.PNG](src/data_tables.PNG)
+
