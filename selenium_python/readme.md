@@ -515,3 +515,7 @@ Para poder manipular el dropdown debemos importar un nuevo submodulo de selenium
 
 > archivo adjunto alerts.py
 
+### Automatizar navegación
+
+> archivo adjunto automatic_navigation.py
+
