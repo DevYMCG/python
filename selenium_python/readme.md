@@ -519,3 +519,12 @@ Para poder manipular el dropdown debemos importar un nuevo submodulo de selenium
 
 > archivo adjunto automatic_navigation.py
 
+### Demora implícita y explícita
+
+#### Demoras
+
+**Implícita:** busca uno o varios elementos en el DOM si no se encuentra disponibles por la cantidad de tiempo asignado.
+
+**Explícita:** utiliza condicionales de espera determinadas y continúa hasta que se cumplan.
+
+> archivo adjunto waits.py
