@@ -503,7 +503,13 @@ Nota: como no tiene mucha información lo obtendremos a traves de su XPath
 
 Para poder manipular el dropdown debemos importar un nuevo submodulo de selenium
 
+![src/dropdown.jpg](src/dropdown.jpg)
+
 > from selenium.webdriver.support.ui import Select
 
 > archivo adjunto select_language.py
+
+### Manejar alert y pop-up
+
+![src/alert.PNG](src/alert.PNG)
 
