@@ -563,3 +563,9 @@ Su funcionalidad varia de acuerdo al tiempo
 ![src/Dynamic_controls.PNG](src/Dynamic_controls.PNG)
 
 > archivo adjunto dynamic_controls.py
+
+### Typos
+
+Validaciones para que el texto de un sitio web sea igual al esperado
+
+![src/Typos.PNG](src/Typos.PNG)
