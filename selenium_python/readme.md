@@ -513,3 +513,5 @@ Para poder manipular el dropdown debemos importar un nuevo submodulo de selenium
 
 ![src/alert.PNG](src/alert.PNG)
 
+> archivo adjunto alerts.py
+
