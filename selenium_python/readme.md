@@ -498,3 +498,6 @@ Nota: como no tiene mucha información lo obtendremos a traves de su XPath
 ![src/create_an_account_5_input.png](src/create_an_account_5_input.png)
 
 > archivo adjunto correspondiente a las capturas register_new_user.py
+
+### Manejar dropdown y listas
+

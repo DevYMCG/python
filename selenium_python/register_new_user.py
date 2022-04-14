@@ -48,11 +48,17 @@ class RegisterNewUser(unittest.TestCase):
 
         # enviar datos para cada una de las nuevas variables
         first_name.send_keys('Test')
+        driver.implicitly_wait(1) # pausas
         middle_name.send_keys('Test')
+        driver.implicitly_wait(1)
         last_name.send_keys('Test')
+        driver.implicitly_wait(1)
         email_address.send_keys('Test@testingmail.com')
+        driver.implicitly_wait(1)
         password.send_keys('Test')
+        driver.implicitly_wait(1)
         confirm_password.send_keys('Test')
+        driver.implicitly_wait(1)
         submit_button.click()
 
     def tearDown(self):
