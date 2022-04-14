@@ -531,8 +531,8 @@ Para poder manipular el dropdown debemos importar un nuevo submodulo de selenium
 
 ### Condicionales esperadas
 
-| Expected Condition	|  Descripción	 |  Ejemplo
-| ------------------     |-------------   | ----------- 
+| Expected Condition	|  Descripción	                          |  Ejemplo
+| ------------------    |--------------------------------------   | ----------- 
 | element_to_be_clickable(locator) |	Espera a que el elemento sea visible y habilitado para hacer clic en el mismo |	WebDriverWait(self.driver,10).until(expected_conditions.element_to_be_clickable((By.NAME,“accept_button”)))
 | element_to_be_selected(element) |	Espera a que un elemento sea seleccionado |	subscription = self.driver.find_element_by_name(“terms”). WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_selected(terms)))
 | invisibility_of_element_located(locator)	| Espera a que un elemento no sea visible o no se encuentre presente en el DOM |	WebDriverWait(self.driver,10).until(expected_conditions.invisibility_of_element_located((By.ID,“loading_banner”)))
