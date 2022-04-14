@@ -568,4 +568,4 @@ Su funcionalidad varia de acuerdo al tiempo
 
 Validaciones para que el texto de un sitio web sea igual al esperado
 
-![src/Typos.PNG](src/Typos.PNG)
+![src/typos.PNG](src/typos.PNG)
