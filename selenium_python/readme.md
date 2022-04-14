@@ -555,3 +555,11 @@ Este ejemplo demuestra cuándo los elementos de una página cambian al desaparec
 ![src/disappearing_elements.PNG](src/disappearing_elements.PNG)
 
 > archivo adjunto dynamic_elements.py
+
+### Controles dinámicos
+
+Su funcionalidad varia de acuerdo al tiempo
+
+![src/Dynamic_controls.PNG](src/Dynamic_controls.PNG)
+
+> archivo adjunto dynamic_controls.py
