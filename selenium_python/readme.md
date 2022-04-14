@@ -546,6 +546,12 @@ Para poder manipular el dropdown debemos importar un nuevo submodulo de selenium
 
 ### Agregar y eliminar elementos
 
-> archivo adjunto add_remove_elements
+> archivo adjunto add_remove_elements.py
 
 ### Elementos dinámicos
+
+Este ejemplo demuestra cuándo los elementos de una página cambian al desaparecer o reaparecer en cada carga de página.
+
+![src/disappearing_elements.PNG](src/disappearing_elements.PNG)
+
+> archivo adjunto dynamic_elements.py
