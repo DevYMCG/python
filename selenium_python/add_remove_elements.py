@@ -7,16 +7,16 @@ class AddRemoveElements(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path=r'./driver/chromedriver.exe')
         driver = self.driver
-        driver.implicitly_wait(30)
-        driver.maximize_window()
-        driver.get("http://the-internet.herokuapp.com/")
+        driver.get("https://the-internet.herokuapp.com/")
         driver.find_element_by_link_text('Add/Remove Elements').click()
     
     def test_add_remove(self):
         driver = self.driver
 
         elements_added = int(input('How many elements will you add?: '))
+
         elements_removed = int(input('How many elements will you remove?. '))
+
         total_elements = elements_added - elements_removed
 
         add_button = driver.find_element_by_xpath('/html/body/div[2]/div/div/button')

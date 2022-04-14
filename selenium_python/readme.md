@@ -545,3 +545,7 @@ Para poder manipular el dropdown debemos importar un nuevo submodulo de selenium
 | visibility_of_element_located(locator)	| Espera a que el elemento indicado por su selector esté en el DOM, sea visible y que su alto y ancho sean mayores a cero |	WebDriverWait(self.driver,10).until(expected_conditions.visibility_of_element_located((By.ID,“firstname”)))
 
 ### Agregar y eliminar elementos
+
+> archivo adjunto add_remove_elements
+
+### Elementos dinámicos
