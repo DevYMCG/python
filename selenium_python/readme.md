@@ -423,7 +423,7 @@ Como viste en clases anteriores, un sitio web se construye por código HTML en f
 
 Selenium WebDriver nos brinda la posibilidad de poder referirnos a estos elementos y ejecutar métodos específicos para realizar las mismas acciones que un humano haría sobre los mismos, gracias a las clases WebDriver y WebElement.
 
-#### Clase WebDriver**
+#### Clase WebDriver
 
 Cuenta con una serie de propiedades y métodos para interactuar directamente con la ventana del navegador y sus elementos relacionados, como son pop-ups o alerts. Por ahora nos centraremos a las más utilizadas.
 
@@ -444,19 +444,23 @@ Estas son las más comunes para acceder al navegador.
 
 Esta clase nos permite interactuar específicamente con elementos de los sitios web como textbox, text area, button, radio button, checkbox, etc.
 
-Propiedades más comunes de la clase WebElement
-Propiedad/Atributo	Descripción	Ejemplo
-size	Obtiene el tamaño del elemento	login.size
-tag_name	Obtiene el nombre de la etiqueta HTML del elemento	login.tag_name
-text	Obtiene el texto del elemento	login.text
-Métodos más comunes de la clase WebElement
-Método/Atributo	Descripción	Ejemplo
-clear()	Limpia el contenido de un textarea	first_name.clear()
-click()	Hace clic en el elemento	send_button.click()
-get_attribute(name)	Obtiene el valor del atributo de un elemento	submit_button.get_attribute(‘value’) last_name.get_attribute(max_length)
-is_displayed()	Verifica si el elemento está a la vista al usuario	banner.is_displayed()
-is_enabled()	Verifica si el elemento está habilitado	radio_button.is_enabled()
-is_selected()	Verifica si el elemento está seleccionado, para el caso de checkbox o radio button	checkbox.is_selected()
-send_keys(value)	Simula escribir o presionar teclas en un elemento	email_field.send_keys(‘team@platzi.com’)
-submit()	Envía un formulario o confirmación en un text area	search_field.submit()
-value_of_css_property(property_name)	Obtiene el valor de una propiedad CSS del elemento	header.value_of_css_property(‘background-color’)
+**Propiedades más comunes de la clase WebElement**
+
+| Propiedad/Atributo	| Descripción	                                      | Ejemplo
+|------------------     |------------------------------------------           |------------------
+| size	                | Obtiene el tamaño del elemento	                  | login.size
+| tag_name	            | Obtiene el nombre de la etiqueta HTML del elemento  | login.tag_name
+| text	                | Obtiene el texto del elemento	                      | login.text
+
+#### Métodos más comunes de la clase WebElement
+
+| Método/Atributo	                    | Descripción	                                     | Ejemplo
+| clear()	                            | Limpia el contenido de un textarea	             | first_name.clear()
+| click()	                            | Hace clic en el elemento	                         | send_button.click()
+| get_attribute(name)	                | Obtiene el valor del atributo de un elemento	     | submit_button.get_attribute(‘value’) last_name.get_attribute(max_length)
+| is_displayed()	                    | Verifica si el elemento está a la vista al usuario | banner.is_displayed()
+| is_enabled()	                        | Verifica si el elemento está habilitado	         | radio_button.is_enabled()
+| is_selected()	                        | Verifica si el elemento está seleccionado, para el caso de checkbox o radio button | checkbox.is_selected()
+| send_keys(value)	                    | Simula escribir o presionar teclas en un elemento	| email_field.send_keys(‘team@platzi.com’)
+| submit()	                            | Envía un formulario o confirmación en un text area	| search_field.submit()
+| value_of_css_property(property_name)	| Obtiene el valor de una propiedad CSS del elemento	| header.value_of_css_property(‘background-color’)
