@@ -455,6 +455,7 @@ Esta clase nos permite interactuar específicamente con elementos de los sitios 
 #### Métodos más comunes de la clase WebElement
 
 | Método/Atributo	                    | Descripción	                                     | Ejemplo
+|----------------------------------     |----------------------------------------------      |----------------------
 | clear()	                            | Limpia el contenido de un textarea	             | first_name.clear()
 | click()	                            | Hace clic en el elemento	                         | send_button.click()
 | get_attribute(name)	                | Obtiene el valor del atributo de un elemento	     | submit_button.get_attribute(‘value’) last_name.get_attribute(max_length)
