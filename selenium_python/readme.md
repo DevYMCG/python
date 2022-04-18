@@ -594,3 +594,11 @@ Metodologia usada en el testing de software
 |------------------                     |------------------           |------------------
 | Colocar valores numericos en un campo	| 500000	                  | El usuario debería poder pagar y recibir mensaje de confirmación
 | Colocar valores numericos y de caracteres en un campo de monto a pagar	| $500.000.00                  | El usuario debe recibir un mensaje de error indicando que coloque solo valores númericos
+
+![src/ddt_cap1.PNG](src/ddt_cap1.PNG)
+
+> Archivo adjunto search_ddt.py
+
+Leyendo de un archivo .csv
+
+> Archivo adjunto search_csv_ddt.py
