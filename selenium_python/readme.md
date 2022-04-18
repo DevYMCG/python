@@ -576,3 +576,21 @@ Validaciones para que el texto de un sitio web sea igual al esperado
 
 ![src/data_tables.PNG](src/data_tables.PNG)
 
+> Archivo adjunto tables.py
+
+### Data Driven Testing (DDT)
+
+Metodologia usada en el testing de software
+
+#### TDD O DDT?
+
+**Test Driven Development:** Desarrollar código en base a pruebas para que pueda cumplirlas.
+
+**Data Driven Testing:** Desarrollar pruebas en base a código ya existente para validar en  qué escenarios pasan o fallan.
+
+**Ejemplo de formulario**
+
+| Descripción       	                | Datos de prueba	          | Salida esperada
+|------------------                     |------------------           |------------------
+| Colocar valores numericos en un campo	| 500000	                  | El usuario debería poder pagar y recibir mensaje de confirmación
+| Colocar valores numericos y de caracteres en un campo de monto a pagar	| $500.000.00                  | El usuario debe recibir un mensaje de error indicando que coloque solo valores númericos
