@@ -602,3 +602,21 @@ Metodologia usada en el testing de software
 Leyendo de un archivo .csv
 
 > Archivo adjunto search_csv_ddt.py
+
+### Page Object Model (POM)
+
+Patrón de diseño usado en testing que nos brinda de diversos beneficios para nuestras automatizaciones.
+
+![src/page_object_model.PNG](src/page_object_model.PNG)
+
+En vez de que tengamos las pruebas en un solo archivo manejaremos archivos independientes a esto lo llamaremos **Pages**. 
+
+#### Beneficios
+
+- Crea un alto nivel de abstracción para minimizar cambios en las pruebas si los desarrolladores modifican el sitio.
+
+- Crea código reuzable que se puede utilizar en múltiples pruebas
+
+- Las pruebas son más legibles, flexibles y vigentes
+
+> archivos test_google.py y google.page.py 
