@@ -258,3 +258,57 @@ def pyramid_sum(lower, upper, margin=0):
  10
 
 ```
+
+### Colecciones incorporadas en Python
+
+**Listas**
+- Propósito general
+- Estructura más utilizada.
+- Tamaño dinámico
+- De tipo secuencial
+- Ordenable.
+
+**Tuplas**
+- Inmutables (No se pueden añadir o cambiar)
+- Útiles para datos constantes.
+- Más rápidas que las listas
+- Tipo secuencial
+
+```python
+tuple1 = ()
+tuple2 = (1274, 1275, 1276)
+tuple3 = 'mulan','pucca', 'percy',
+
+print(tuple1)
+print(tuple2)
+print(tuple3)
+
+>>> ()
+>>> (1274, 1275, 1276)
+>>> ('mulan','pucca', 'percy')
+```
+
+**Conjuntos/Sets**
+
+- Almacenen objetos no-duplicados
+- De acceso rápido
+- Aceptan operaciones lógicas
+- Son desordenados.
+
+**Ejemplo**
+- Receta de cocina
+
+```python
+set1 = {3, 5, 9, 3, 9}
+set2 = set()
+numbers = [1, 2, 3, 4, 5, 6, 1, 2]
+set3 = set(numbers)
+
+print(set1)
+print(set2)
+print(set3)
+
+>>> { 9, 3, 5}
+>>> set()
+>>> {1, 2, 3, 4, 5, 6}
+```
