@@ -335,3 +335,38 @@ print(cats3)
 
 >>> { 'mulan': 2, 'pucca': 1.2}
 ```
+
+**¿En qué casos usarías cada estrutura?**
+
+Listas: guardar informacion 
+Tuplas : guardar paises
+Conjuntos: juego loteria
+Diccionarios: guradar información de un formulario
+
+**¿Qué tipo de información guardarías?**
+Listas
+
+```python 
+set1 = {'nombre', 23}
+```
+
+Tuplas:
+
+```python 
+tuple3 = 'Colombia','México', '',
+```
+Conjuntos:
+
+```python 
+set1 = {3, 5, 9, 3, 9}
+```
+
+Diccionarios: 
+
+```python 
+cats1 = {
+    'nombre': 'Juan valdez',
+    'edad': 94,
+    'ciudad': 'México,
+}
+```
