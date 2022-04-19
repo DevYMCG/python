@@ -7,7 +7,7 @@
     - [Tipos de colecciones](#Tipos_de_colecciones)
     - [Operaciones esenciales con colecciones](#Operaciones_esenciales_con_colecciones)
     - [Colecciones incorporadas en Python](#Colecciones_incorporadas_en_Python)
-- [Arrays](#Preparar-entorno-de-trabajo)
+- [Arrays](#Arrays)
     - [Arrays](#entidades-y-atributos)
     - [Arrays de dos dimensiones](#atributos)
 - [Linked lists](#relaciones)
@@ -370,3 +370,55 @@ cats1 = {
     'ciudad': 'México,
 }
 ```
+
+# Arrays
+
+### Arrays
+
+Estructura de dato lineal
+
+**¿Qué es una estructura de datos?**
+
+Representación interna de una colección de información.
+
+**Conceptos clave**
+- **Elemento:** valor almacenado en las posiciones del array
+- **Índice:** referencia a la posición del elemento
+
+Esta es la memoria en la computadora, de forma conceptual se observaria de esta manera
+
+![src/memoria.PNG](src/memoria.PNG)
+
+Podemos ocupar una o multiples casillas, aqui podemos ver como se guardaria esta variable en memoria
+
+![src/como_se_guarda_en_memoria.PNG](src/como_se_guarda_en_memoria.PNG)
+
+conforme a como vamos agregando información esto se pone de forma consecutiva.
+
+![src/como_se_guarda_en_memoria_2.PNG](src/como_se_guarda_en_memoria_2.PNG)
+
+Los **arrays** van a guardar información de forma consecutiva, y tiene ciertas restricciones como al momento de guardar la información yo no voy a poder guardar mas de la que me permite el array, en cambio una **lista** en python se puede guardar de manera dinamica y la información no va a ser consecutiva si no que va a estar dispersa en la memoria.
+
+![src/array.PNG](src/array.PNG)
+
+- el array tiene una capacidad y es el número de elementos que puede almacenar su tamaño.
+- hay distintos tipos de arrays
+
+![src/tipos_arrays.PNG](src/tipos_arrays.PNG)
+
+**se recomienda no trabajar en estructura de datos de mas de dos dimensiones**
+
+**¿Los arrays son listas?**
+
+Respuesta si los arrays son un tipo de lista pero las listas no son arrays
+
+**Los arrays son restrictivos**
+No pueden:
+- Agregar posiciones
+- Remover posiciones
+- Modificar su Tamaño
+- Su capacidad se define al crearse.
+
+**Donde se usan**
+- Un videjuego con sprites de 100x100 px.
+- Opciones en un menú
