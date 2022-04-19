@@ -8,8 +8,8 @@
     - [Operaciones esenciales con colecciones](#Operaciones_esenciales_con_colecciones)
     - [Colecciones incorporadas en Python](#Colecciones_incorporadas_en_Python)
 - [Arrays](#Arrays)
-    - [Arrays](#entidades-y-atributos)
-    - [Arrays de dos dimensiones](#atributos)
+    - [Arrays](#Arrays)
+    - [Arrays de dos dimensiones](#Arrays_de_dos_dimensiones)
 - [Linked lists](#relaciones)
     - [Nodos y singly linked list](#cardinalidad-1-a-1)
     - [Crear nodos](#cardinalidad-0-a-1)
@@ -434,3 +434,20 @@ Metódos:
 - Reemplazo
 
 ![src/ejercicios_arrays.PNG](src/ejercicios_arrays.PNG)
+
+> ver codigo adjunto array.py
+
+### Arrays de dos dimensiones
+
+**Otros nombres**
+- Bi-dimensional array
+- Two-dimensional array
+- Grid
+- Rejilla
+- Malla
+- Tabla
+
+**Estructura**
+
+Tenemos filas y columnas y dentro de estas valores
+![src/estructura.PNG](src/estructura.PNG)

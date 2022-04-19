@@ -10,7 +10,7 @@ Methods:
     5. Replacement
 """
 
-class Array:
+class Array(object):
 
     def __init__(self, capacity, fill_value=None):
         """
