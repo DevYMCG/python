@@ -5,8 +5,8 @@
     - [Python como base de programación](#Python_como_base_de_programación)
     - [Elementos de la programación en Python](#Elementos_de_la_programación_en_Python)
     - [Tipos de colecciones](#Tipos_de_colecciones)
-    - [Operaciones esenciales con colecciones](#Otras-herramientas-de-testing-y-automatización)
-    - [Colecciones incorporadas en Python](#Otras-herramientas-de-testing-y-automatización)
+    - [Operaciones esenciales con colecciones](#Operaciones_esenciales_con_colecciones)
+    - [Colecciones incorporadas en Python](#Colecciones_incorporadas_en_Python)
 - [Arrays](#Preparar-entorno-de-trabajo)
     - [Arrays](#entidades-y-atributos)
     - [Arrays de dos dimensiones](#atributos)
@@ -196,3 +196,65 @@ items_lists.remove(55)
 **Ejemplo**
 - catalogo de pinturas
 - Directorios telefonicos
+
+### Operaciones esenciales con colecciones
+
+**Operaciones**
+
+- Tamaño
+- Pertenencia
+- Recorrido
+- String
+- Igualdad
+- Concatenación
+- Conversión de tipo
+- Insertar
+- Remover
+- Reemplazar
+- Acceder
+
+```python
+[]
+# An empty list
+["hello!!"]
+# A list of one string
+["hello!!", "oops"]
+# A listof two strings
+["hello!!", "oops", 10]
+# A listof two strings and an int
+["hello!!", ["oops", 10]]
+# A list with a nested list
+```
+**Operaciones esenciales**
+
+**Estructuras propias**
+- Listas
+- Tuplas
+- Conjuntos o sets
+- Diccionarios
+
+```python
+def pyramid_sum(lower, upper, margin=0):
+    blanks = " " * margin
+    print(blanks, lower, upper)
+    if lower > upper:
+        print(blanks, 0)
+        return 0
+    else:
+        result = lower + pyramid_sum(lower + 1, upper, margin + 4)
+        print(blanks, result)
+        return result
+
+(env) λ py pyramid_sum.py
+ 1 4
+     2 4
+         3 4
+             4 4
+                 5 4
+                 0
+             4
+         7
+     9
+ 10
+
+```
