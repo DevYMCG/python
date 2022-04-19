@@ -1,10 +1,10 @@
 # Esctructura de Datos Lineales con Python
 
 ### Indice
-- [Introducción a las estructuras de datos](#Conocer-el-ecocistema-de-selenium)
-    - [Python como base de programación](#Por-qué-aprender-Selenium-y-qué-verás)
-    - [Elementos de la programación en Python](#Historia-de-Selenium)
-    - [Tipos de colecciones](#Otras-herramientas-de-testing-y-automatización)
+- [Introducción a las estructuras de datos](#Introducción_a_las_estructuras_de_datos)
+    - [Python como base de programación](#Python_como_base_de_programación)
+    - [Elementos de la programación en Python](#Elementos_de_la_programación_en_Python)
+    - [Tipos de colecciones](#Tipos_de_colecciones)
     - [Operaciones esenciales con colecciones](#Otras-herramientas-de-testing-y-automatización)
     - [Colecciones incorporadas en Python](#Otras-herramientas-de-testing-y-automatización)
 - [Arrays](#Preparar-entorno-de-trabajo)
@@ -28,3 +28,149 @@
     - [Reto: simulador de playlists musical](#cardinalidad-0-a-1)
 - [Próximos pasos](#relaciones)
     - [Más allá de las estructuras lineales](#cardinalidad-1-a-1)
+
+# Introducción a las estructuras de datos
+
+### Python como base de programación
+
+**De aprendizaje**
+
+- Entender el concepto e importancia de estructuras de datos
+- Comprender el comportamiento, uso e interacción de estructuras de datos con python
+- Poner en práctica lo aprendido.
+
+**Por qué python**
+
+python ayuda bastante a aplicar estos conceptos, algunos beneficios:
+
+- sintansix clara y simple
+- Semántica segura
+- Escalable
+- Interactivo
+- Propósito general
+- Gratis y popular
+
+### Elementos de la programación en Python
+
+**Elementos léxicos**
+- if, while, def, etc
+
+![src/elementos_lexicos.PNG](src/elementos_lexicos.PNG)
+
+**Convenciones**
+- variables
+- constante
+- nombre_funcion
+- nombreClase
+
+![src/convenciones.PNG](src/convenciones.PNG)
+
+**A tomar en cuenta**
+- Sintasix
+- Literales
+- Operadores
+- Import
+- Condicionales
+- Loops
+
+**Estructuras propias**
+
+```python
+[]
+# An empty list
+["hello!!"]
+# A list of one string
+["hello!!", "oops"]
+# A listof two strings
+["hello!!", "oops", 10]
+# A listof two strings and an int
+["hello!!", ["oops", 10]]
+# A list with a nested list
+```
+**Operaciones esenciales**
+
+**Estructuras propias**
+- Listas
+- Tuplas
+- Conjuntos o sets
+- Diccionarios
+
+```python
+items_lists = []
+# items_lists is []
+items_lists.append(34)
+# items_lists is [34]
+items_lists.append(22)
+# items_lists is [34,22]
+items_lists.sort()
+# items_lists is [22, 34]
+items_lists.pop()
+# Returns 34; items_lists is [22]
+items_lists.insert(1, 34)
+# Returns 34; items_lists is [22, 34]
+items_lists.insert(1, 55)
+# Returns 34; items_lists is [22, 55, 34]
+items_lists.pop(1)
+# Returns 55; items_lists is [22, 34]
+items_lists.remove(22)
+#items_lists is [34]
+items_lists.remove(55)
+#raises valueError
+```
+
+**Funciones**
+
+- Declaración y llamada
+- Recursivas
+- Anidadas
+- High order functions
+- Lambdas
+
+**Además**
+
+- Manejo de excepciones y errores
+- Manipulación de archivos
+
+### Tipos de colecciones
+
+**¿Qué es una colección?**: Grupo de cero o más elementos que pueden tratarse como unidad conceptual
+
+**Tipos de colecciones**
+
+- Dinámicas: Aquellas que pueden crecer o disminuir su tamaño
+- Inmutables: Aquellas que no van a cambiar
+
+**Lineales**
+
+- Ordenadas por posición
+- Solo el primer elemento NO tiene predecesor.
+
+![src/lineales.PNG](src/lineales.PNG)
+
+**Ejemplo de colecciones lineales**
+
+- Fila en el supermercado
+- Pila de platos
+- Checklist
+
+**Jerárquicas**
+
+- Ordenadas como un árbol invertido.
+- Solo el primer elemento NO tiene predecesor.
+- Padres e hijos
+
+![src/jerarquicas.PNG](src/jerarquicas.PNG)
+
+**Ejemplo de colecciones Jerárquicas**
+
+- Sistemas de directorios.
+- Índices de libros
+
+**Grafos**
+
+- Cada dato puede tener varios predecesores y sucesores.
+- Estos de llaman "vecinos"
+
+![src/grafos.PNG](src/grafos.PNG)
+
+![src/destino_grafos.PNG](src/destino_grafos.PNG)
