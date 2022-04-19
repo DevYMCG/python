@@ -312,3 +312,26 @@ print(set3)
 >>> set()
 >>> {1, 2, 3, 4, 5, 6}
 ```
+
+**Diccionarios/Dictionaries**
+
+- Pares de llave / valor
+- Arrays asociativos (hash maps)
+- Son desordenados
+
+```python
+cats1 = {
+    'mulan': 2,
+    'pucca': 1.2,
+    'percy': 4,
+}
+
+cats2 = dict([('mulan', 2), ('pucca', 1.2), ('percy', 4)])
+cats3 = dict(mulan=2, pucca=1.2, percy=4)
+
+print(cats1)
+print(cats2)
+print(cats3)
+
+>>> { 'mulan': 2, 'pucca': 1.2}
+```
