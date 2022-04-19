@@ -620,3 +620,24 @@ En vez de que tengamos las pruebas en un solo archivo manejaremos archivos indep
 - Las pruebas son más legibles, flexibles y vigentes
 
 > archivos test_google.py y google.page.py 
+
+### prueba técnica a https://www.mercadolibre.com/
+
+**Consideraciones**
+
+- Practicar en sitios complejos
+- Preguntar acerca de las expectativas
+- Define paso a paso el flujo
+- Piensa como usuario final
+- Programa como desarrollador.
+
+**Flujo en Mercado Libre**
+1. Ingresar a mercadolibre.com.
+2. Seleccionar 'Colombia' como país.
+3. Buscar el termino "playstation 4".
+4. Filtrar por condición "Nuevos".
+5. Filtrar por ubicación "Bogotá".
+6. Ordenar de mayor a menos precio.
+7. Obtener el nombre y precio de los primeros 5 artículos.
+
+> archivos mercadolibre.py 
