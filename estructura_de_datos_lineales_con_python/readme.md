@@ -173,4 +173,26 @@ items_lists.remove(55)
 
 ![src/grafos.PNG](src/grafos.PNG)
 
+**Ejemplo**
+
 ![src/destino_grafos.PNG](src/destino_grafos.PNG)
+
+**Desordenadas**
+
+- No tienen orden particular.
+- No hay predecesores o sucesores.
+
+![src/desordenadas.PNG](src/desordenadas.PNG)
+
+**Ejemplo**
+
+- Una bolsa de canicas
+- Premios de loterias
+
+**Ordenadas**
+
+- Impone un orden con una regla. item(i) <= item (i+1)
+
+**Ejemplo**
+- catalogo de pinturas
+- Directorios telefonicos
