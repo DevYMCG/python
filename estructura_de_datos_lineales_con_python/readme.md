@@ -422,3 +422,15 @@ No pueden:
 **Donde se usan**
 - Un videjuego con sprites de 100x100 px.
 - Opciones en un menú
+
+**crear nuestro propio array**
+
+Metódos:
+- Crearse
+- Longitud
+- Representación de string
+- Pertenencia
+- índice
+- Reemplazo
+
+![src/ejercicios_arrays.PNG](src/ejercicios_arrays.PNG)
