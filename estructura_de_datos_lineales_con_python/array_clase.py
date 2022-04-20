@@ -52,6 +52,8 @@ if __name__ == "__main__":
     print(menu.__str__())
     print(menu.__getitem__(2))
     print(menu.__iter__())
+    print(menu.__setitem__(1,100))
+    print(menu.__str__())
 
 """
 Code used in the shell to create an array
