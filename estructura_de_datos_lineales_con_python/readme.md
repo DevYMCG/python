@@ -484,6 +484,8 @@ Los datos en los nodos estan repartidos en la memoria no son contiguos como los 
 
 ![src/single_linked.PNG](src/single_linked.PNG)
 
+En una serie de nodos el ultimo nodo nos va a llevar a None
+
 ![src/double_list.PNG](src/double_list.PNG)
 
 Estos tienen un comportamiento diferente uno nodo puede hacer referencia a otro nodo en la siguiente lista y al anterior de esta forma podemos recorrer la lista en un sentido y en el otro.
@@ -492,3 +494,74 @@ Estos tienen un comportamiento diferente uno nodo puede hacer referencia a otro 
 
 - Hacer/rehacer operaciones en un editor de texto.
 - Historial de un navegador.
+
+### Crear nodos
+
+**Singly linked list con nodos**
+- Crear una clase Node
+- Referimos valores
+- Unimos nodos iterando
+
+```python 
+class Node():
+
+    """ En una serie de nodos el ultimo nodo nos va a llevar a None """
+    def __init__(self, data, next=None):
+        self.data = data
+        self.next = next
+
+"""
+>>> from node import Node
+>>> node1 = None
+>>> node2 = Node("A", None)
+>>> node3 = Node("B", node2)
+>>> node2
+<node.Node object at 0x00000216BCE62530>
+>>> node2.data
+'A'
+>>> node2.next
+>>> node3.next
+<node.Node object at 0x00000216BCE62530>
+>>> node3.next.data
+>>> node3.next.data
+'A'
+>>> node1
+>>> node1.next
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'NoneType' object has no attribute 'next'
+>>> node1 = Node("C", node3)
+>>> node1.next.data
+'B'
+>>> node1.data
+'C'
+>>> head = None
+>>> for count in range(1,5):
+...     head = Node(count, head)
+...
+>>> while head != None:
+...     print(head.data)
+...     head = head.next
+...
+4
+3
+2
+1
+"""
+```
+**Entendiendo el codigo**
+
+Creamos tres nodos node1, node2 y node3. Node1 apuntaba a None mientras node2 apuntaba a la dirección en memoria del siguiente nodo al que se conectaba y el tercer nodo tenia un valor y hacia referencia al segundo nodo.
+
+![src/explicación.PNG](src/explicación.PNG)
+
+Luego cambiamos las referencias
+
+![src/explicación_2.PNG](src/explicación_2.PNG)
+
+Con el ciclo while realizamos una serie de nodos que hacian referencias unos a otros. a 
+su vez estos nodos se conectaban a los otros.
+
+![src/explicación_3.PNG](src/explicación_3.PNG)
+
+> adjunto codigo node.py
