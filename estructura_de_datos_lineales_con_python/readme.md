@@ -787,5 +787,50 @@ Lo que hicimos fue relacionar una serie de nodos uno con el siguiente
 
 ![src/paso3_detalle.PNG](src/paso3_detalle.PNG)
 
-Una vez definidos comenzamos a realizar estas operaciones:
+Una vez definidos comenzamos a realizar estas operaciones: 
 
+Primera operacion la **busqueda** 
+
+![src/busqueda.PNG](src/busqueda.PNG)
+
+La cual consistia de que de nuestra lista de nodos la variable probe hiba visitando cada uno de estos por ejemplo: si buscamos el elemento con valor 2 lo que  va a ser es que cuando encuentre ese valor ejecutaba la operación en nuestro caso decir si encontro dicho valor.
+
+**Reemplazo**
+
+Consiste a que a ese metodo le demos un argumento lo busque y lo reemplace por otro.
+
+![src/reemplazar.PNG](src/reemplazar.PNG)
+
+**Insertar nodo al inicio**
+
+Los nodos no tienen indice entonces el nodo que insertemos al inicio va a ser head y el anterior head ya no va a ser ese nodo inicial ahora va a ser head.next y es alli donde tenemos que pensar como reposicionar estos nodos para que no tengamos problemas
+
+![src/insertar_nodo_inicio.PNG](src/insertar_nodo_inicio.PNG)
+
+**Insertar nodo al final**
+
+El nodo que voy a insertar va a tener el valor de k y va a apuntar al None mientras que el nodo 3 va a apuntar al nodo dos y el nodo dos va a apuntar al nodo 1 y el nodo 1 va a apuntar el valor de k
+
+![src/insertar_nodo_final.PNG](src/insertar_nodo_final.PNG)
+
+**Eliminar el primer nodo**
+
+Debemos ubicarnos sobre ese nodo o valor a eliminar
+
+![src/eliminar_primer_nodo.PNG](src/eliminar_primer_nodo.PNG)
+
+**Eliminar el ultimo nodo**
+
+![src/eliminar_ultimo_nodo.PNG](src/eliminar_ultimo_nodo.PNG)
+
+**Insertar en cualquier posición**
+
+Si queremos insertar un nodo en n posición tenemos que saber donde lo vamos a ubicar, puede ser a travez del valor o la variable iteradora, nosotros buscamos aquel nodo que tubiera como valor tres, ese nodo ahora va a insertar al nuevo que ahora contiene la palabra py y este nodo ahora va a apuntar al dato dos hay que posicionar los punteros nuevamente
+
+![src/insertar_nodo_posicion.PNG](src/insertar_nodo_posicion.PNG)
+
+**Eliminar en cualquier posición**
+
+Hay que recorrerlo, buscarlo y hay que eliminarlo
+
+![src/eliminar_nodo_posicion.PNG](src/eliminar_nodo_posicion.PNG)
