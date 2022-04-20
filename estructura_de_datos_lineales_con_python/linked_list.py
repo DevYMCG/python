@@ -1,4 +1,11 @@
-from locale import currency
+"""
+Code used for the class 'Nodos y singly linked list'.
+
+All the code but the 'Node' class is written in the shell
+for demonstrative purposes.
+
+The node methods should be incorporated into the Node class.
+"""
 from node import Node
 
 class SinglyLinkedList:
