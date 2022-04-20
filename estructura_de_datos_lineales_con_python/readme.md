@@ -10,24 +10,24 @@
 - [Arrays](#Arrays)
     - [Arrays](#Arrays)
     - [Arrays de dos dimensiones](#Arrays_de_dos_dimensiones)
-- [Linked lists](#relaciones)
-    - [Nodos y singly linked list](#cardinalidad-1-a-1)
-    - [Crear nodos](#cardinalidad-0-a-1)
-    - [Crear singly linked lists](#cardinalidad)
-    - [Operaciones en single linked structures](#cardinalidad-1-a-1)
-    - [Operaciones a detalle](#cardinalidad-0-a-1)
-    - [Circular linked list](#cardinalidad)
-- [Stacks](#relaciones)
-    - [Qué son stacks?](#cardinalidad-1-a-1)
-    - [crear stack](#cardinalidad-0-a-1)
-- [Queues](#relaciones)
-    - [Qué son los queues?](#cardinalidad-1-a-1)
-    - [Queue basada en listas](#cardinalidad-0-a-1)
-    - [Queue basada en dos stacks](#cardinalidad-1-a-1)
-    - [Queue basada en nodos](#cardinalidad-0-a-1)
-    - [Reto: simulador de playlists musical](#cardinalidad-0-a-1)
-- [Próximos pasos](#relaciones)
-    - [Más allá de las estructuras lineales](#cardinalidad-1-a-1)
+- [Linked lists](#Linked_lists)
+    - [Nodos y singly linked list](#Nodos_y_singly_linked_list)
+    - [Crear nodos](#Crear_nodos)
+    - [Crear singly linked lists](#Crear_singly_linked_lists)
+    - [Operaciones en single linked structures](#Operaciones_en_single_linked_structures)
+    - [Operaciones a detalle](#Operaciones_a_detalle)
+    - [Circular linked list](#Circular_linked_list)
+- [Stacks](#Stacks)
+    - [Qué son stacks?](#Que_son_stacks)
+    - [crear stack](#crear_stack)
+- [Queues](#Queues)
+    - [Qué son los queues?](#Que_son_los_queues)
+    - [Queue basada en listas](#Queue_basada_en_listas)
+    - [Queue basada en dos stacks](#Queue_basada_en_dos_stacks)
+    - [Queue basada en nodos](#Queue_basada_en_nodos)
+    - [Reto: simulador de playlists musical](#simulador_de_playlists_musical)
+- [Próximos pasos](#Próximos_pasos)
+    - [Más allá de las estructuras lineales](#Más_allá_de_las_estructuras_lineales)
 
 # Introducción a las estructuras de datos
 
@@ -454,3 +454,41 @@ Tenemos filas y columnas y dentro de estas valores
 ![src/estructura.PNG](src/estructura.PNG)
 
 > archivo adjunto grid.py
+
+# Linked lists
+
+### Nodos y singly linked list
+
+Tambien conocidas como **linked structures**
+- Consiste de nodos conectados a otros
+- Los más comunes son sencillos o dobles
+- No se acceden por indices, si no por recorrido
+
+**Conceptos claves**
+- **Data:** valor almacenado en nodos.
+- **Next:** referencia al siguiente nodo.
+- **Previous:** referencia al nodo anterior.
+- **Head:** referencia al primer nodo.
+- **Tail:** referencia al último nodo.
+
+![src/linkedList.PNG](src/linkedList.PNG)
+
+Los datos en los nodos estan repartidos en la memoria no son contiguos como los arrays entonces para poder hacer referencia a otro dato utilizamos los nodos que son otros datos que van a estar almacenados en otro espacio en memoria y el siguiente en otro diferente que no es continuo esto nos da la ventaja de que podemos acceder a los datos saltando en los espacios de memoria de una forma muchisimo mas agil que tener que usar una lista que deba de buscarlos.
+
+**Implementación**
+
+- Implementar otras estructuras
+- Optimización
+
+**Singly Linked Structure**
+
+![src/single_linked.PNG](src/single_linked.PNG)
+
+![src/double_list.PNG](src/double_list.PNG)
+
+Estos tienen un comportamiento diferente uno nodo puede hacer referencia a otro nodo en la siguiente lista y al anterior de esta forma podemos recorrer la lista en un sentido y en el otro.
+
+**Ejemplo de linked lists**
+
+- Hacer/rehacer operaciones en un editor de texto.
+- Historial de un navegador.
