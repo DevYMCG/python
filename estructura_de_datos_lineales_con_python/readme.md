@@ -450,6 +450,7 @@ Metódos:
 **Estructura**
 
 Tenemos filas y columnas y dentro de estas valores
+
 ![src/estructura.PNG](src/estructura.PNG)
 
 > archivo adjunto grid.py
