@@ -18,7 +18,6 @@ class Node():
 >>> node3.next
 <node.Node object at 0x00000216BCE62530>
 >>> node3.next.data
->>> node3.next.data
 'A'
 >>> node1
 >>> node1.next

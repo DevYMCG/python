@@ -565,3 +565,7 @@ su vez estos nodos se conectaban a los otros.
 ![src/explicación_3.PNG](src/explicación_3.PNG)
 
 > adjunto codigo node.py
+
+### Crear singly linked lists
+
+
