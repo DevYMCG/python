@@ -773,3 +773,19 @@ Enter the position to insert the new item: 3
 Py
 ```
 
+### Operaciones a detalle
+
+Usamos la variable auxiliar probe esta nos ayudaba a conocer que habia dentro de cada uno de los nodos
+
+![src/paso1_paso2.PNG](src/paso1_paso2.PNG)
+
+Los fue recorriendo y cuando habia una condición especifica se detenia y obtenia la información
+
+![src/paso3.PNG](src/paso3.PNG)
+
+Lo que hicimos fue relacionar una serie de nodos uno con el siguiente 
+
+![src/paso3_detalle.PNG](src/paso3_detalle.PNG)
+
+Una vez definidos comenzamos a realizar estas operaciones:
+
