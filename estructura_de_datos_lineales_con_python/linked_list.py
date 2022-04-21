@@ -9,11 +9,13 @@ The node methods should be incorporated into the Node class.
 from node import Node
 
 class SinglyLinkedList:
+
     def __init__(self):
         self.tail = None
         self.size = 0
     
     def append(self, data):
+        """ añadir nodos """
         node = Node(data)
 
         if self.tail == None:
@@ -22,6 +24,7 @@ class SinglyLinkedList:
             current = self.tail
 
             while current.next:
+                """ si el retorno de su valor no es falso"""
                 current = current.next
             
             current.next = node
@@ -29,22 +32,27 @@ class SinglyLinkedList:
         self.size +=1
     
     def size(self):
+        """ retorna el tamaño de los nodos"""
         return str(self.size)
     
     def iter(self):
+        """ metodo iterador """
         current = self.tail
 
         while current:
             val = current.data
             current = current.next
+            """ Generador de valores los almacena sobre la marcha"""
             yield val
     
     def delete(self, data):
+        """Eliminar nodos"""
         current = self.tail
         previous = self.tail
 
         while current:
             if current.data == data:
+                """ Si es igual al dato que pasamos como argumento"""
                 if current == self.tail:
                     self.tail = current.next
                 else:
@@ -56,15 +64,16 @@ class SinglyLinkedList:
             current = current.next
     
     def search(self, data):
+        """ Busqueda de nodo con el valor"""
         for node in self.iter():
             if data == node:
                 print(f"Data {data} found!")
     
     def clear(self):
+        """ limpiar nuestra lista"""
         self.tail = None
         self.head = None
         self.size = 0
-
 
 """
 λ py

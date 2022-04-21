@@ -673,6 +673,13 @@ Data spam found!
 ### Operaciones en single linked structures
 
 ```python
+# creando una serie de nodos del 1 al 6
+>>> from node import Node       
+>>> head = None                 
+>>> for count in range(1, 6):   
+...     head = Node(count, head)
+... 
+# verificando que se hayan creado                            
 >>> while head!= None:
 ...     print(head.data)
 ...     head = head.next
@@ -834,3 +841,29 @@ Si queremos insertar un nodo en n posición tenemos que saber donde lo vamos a u
 Hay que recorrerlo, buscarlo y hay que eliminarlo
 
 ![src/eliminar_nodo_posicion.PNG](src/eliminar_nodo_posicion.PNG)
+
+### Circular linked list
+
+Las listas enlazadas circulares son un tipo de lista enlazada en la que el último nodo apunta hacia el headde la lista en lugar de apuntar None. Esto es lo que los hace circulares.
+
+![src/circular_linked.PNG](src/circular_linked.PNG)
+
+```python
+>>> from node import Node
+>>> index = 1
+>>> new_item = 'ham'
+>>> head = Node(None, None)
+>>> head.next = head
+>>> probe = head
+>>> while index > 0 and probe.next != head:
+...     probe = probe.next
+...     index -= 1
+...
+>>> probe.next = Node(new_item, probe.next)
+>>> print(probe.next.data)
+ham
+>>>
+```
+creamos un solo nodo y este se referenciaba asi mismo 
+
+![src/circular.PNG](src/circular.PNG)
