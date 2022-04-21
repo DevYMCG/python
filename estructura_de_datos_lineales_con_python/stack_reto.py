@@ -1,6 +1,7 @@
 from node import Node
 
 class Stack:
+    
     def __init__(self):
         self.top = None
         self.size = 0
@@ -46,8 +47,8 @@ class Stack:
             return "The stack is empty"
     
     def print(self):
-        """Imprime cada nodo."""
         probe = self.top
+
         while probe != None:
             print(probe.data)
             probe = probe.next
@@ -61,6 +62,10 @@ class Stack:
     def clear(self):
         while self.top:
             self.pop()
+    
+    def clearTwo(self):
+        self.top = None
+        self.size = 0
 
 if __name__ == "__main__":  
     food = Stack()
@@ -68,7 +73,8 @@ if __name__ == "__main__":
     food.push('ham')
     food.push('spam')
     food.search('dog')
-    food.print()
+    food.clearTwo()
+    print(food.peek())
 
 
 """
