@@ -958,4 +958,31 @@ Los stacks y los queue se usan de manera diferente.
 
 ![src/stack_vs_queue.PNG](src/stack_vs_queue.PNG)
 
+Intanciamos una clase la cual va a tener dos stacks que van a estar basadas en listas.
+
+![src/dos_stacks_ejm.PNG](src/dos_stacks_ejm.PNG)
+
+Cuando agregamos a una lista lo agregamos a inbound_stack
+
+![src/dos_stacks_dos_ejm.PNG](src/dos_stacks_dos_ejm.PNG)
+
+despues con el metodo pop a inbound_stack enviamos esos numeros a outbound_stack pero lo hicimos en sentido inverso.
+
 ### Queue basada en nodos
+
+**¿Por qué y cómo?:**
+
+- Agregar y eliminar elementos son O(1)
+- Usando doubly linked list
+
+creamos la clase queue realizamos sus metodos incluimos el enqueue y dequeue que son los mas esenciales
+
+![src/ejm_queue_basada_en_nodos.PNG](src/ejm_queue_basada_en_nodos.PNG)
+
+luego creamos nodos y cada uno de ellos tiene elementos en valores que podemos consultar en el mismo nodo, tambien los nodos tienen referencia a cual es el siguiente y el anterior.
+
+![src/ejm_queue_basada_en_nodos_2.PNG](src/ejm_queue_basada_en_nodos_2.PNG)
+
+Despues eliminamos cada uno de estos nodos
+
+![src/ejm_queue_basada_en_nodos_3.PNG](src/ejm_queue_basada_en_nodos_3.PNG)
