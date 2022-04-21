@@ -867,3 +867,12 @@ ham
 creamos un solo nodo y este se referenciaba asi mismo 
 
 ![src/circular.PNG](src/circular.PNG)
+
+### Double linked list
+
+![src/Double_linked_list.PNG](src/Double_linked_list.PNG)
+
+Creamos una clase de un nodo de doble via que por defecto a punta a un nodo siguiente y un nodo anterior con el valor 
+
+![src/Double_linked_list_ejm.PNG](src/Double_linked_list_ejm.PNG)
+
