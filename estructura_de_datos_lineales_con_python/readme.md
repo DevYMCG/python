@@ -914,3 +914,7 @@ Algunas de las aplicaciones que tienen es en aplicaciones aritmeticas
 **Metodos de stacks**
 
 ![src/metodos_stacks.PNG](src/metodos_stacks.PNG)
+
+Creamos la clase stack e incluimos sus metodos esenciales a traves de push creamos los elementos.
+
+![src/stack_ejercicio.PNG](src/stack_ejercicio.PNG)
