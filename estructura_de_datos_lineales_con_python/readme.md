@@ -918,3 +918,44 @@ Algunas de las aplicaciones que tienen es en aplicaciones aritmeticas
 Creamos la clase stack e incluimos sus metodos esenciales a traves de push creamos los elementos.
 
 ![src/stack_ejercicio.PNG](src/stack_ejercicio.PNG)
+
+# Queues
+
+### ¿Qué son los queues?
+
+**Conceptos importantes**
+
+- **FIFO:** First-In, First-Out
+- **Rear:** Último elemento
+- **Front:** Primer elemento
+
+**Conceptos importantes**
+
+- **Priority queues:** se basa en FIFO con elementos de mayor/menor prioridad.
+
+**Operaciones fundamentales:**
+
+**pop():** remover front.
+**add():** añadir a rear.
+
+**metodo de queues**
+
+![src/metodos_queue.PNG](src/metodos_queue.PNG)
+
+### Queue basada en listas
+
+Creamos una clase le añadimos dos metodos  enqueue para agregar elementos y el dequeue para eliminar elementos
+
+![src/queue1.PNG](src/queue1.PNG)
+
+agregamos estos elementos y varia o se ve afectado el tamaño este es el principio fundamental de los queues
+
+![src/enqueue2.PNG](src/enqueue2.PNG)
+
+### Queue basada en dos stacks
+
+Los stacks y los queue se usan de manera diferente.
+
+![src/stack_vs_queue.PNG](src/stack_vs_queue.PNG)
+
+### Queue basada en nodos
