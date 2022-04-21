@@ -876,3 +876,41 @@ Creamos una clase de un nodo de doble via que por defecto a punta a un nodo sigu
 
 ![src/Double_linked_list_ejm.PNG](src/Double_linked_list_ejm.PNG)
 
+# Stacks
+
+### Qué son stacks?
+
+El principio fundamental de los stacks es LIFO, es decir que el ÚLTIMO elemento en entrar será el primero en salir.
+
+**Qué son:**
+
+- Colección lineal 
+- Basados en arrays o linked lists
+- LIFO (last-in-first-out)
+- Añadir: push
+- Remover: pop
+- Top
+- Bottom
+
+![src/stack.PNG](src/stack.PNG)
+
+Algunas de las aplicaciones que tienen es en aplicaciones aritmeticas
+
+![src/operaciones_aritmeticas.PNG](src/operaciones_aritmeticas.PNG)
+
+**Aplicaciones**
+
+- Invertir el orden de una lista
+- Implementar "undo"
+- Mantener historiales
+- Backtracking.
+
+**Stack vs. list**
+
+- Similares, no iguales
+- List: append, pop
+- Es afectada por sus otros métodos.
+
+**Metodos de stacks**
+
+![src/metodos_stacks.PNG](src/metodos_stacks.PNG)
