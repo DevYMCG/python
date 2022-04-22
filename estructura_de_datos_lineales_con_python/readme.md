@@ -952,6 +952,44 @@ agregamos estos elementos y varia o se ve afectado el tamaño este es el princip
 
 ![src/enqueue2.PNG](src/enqueue2.PNG)
 
+```python
+class ListQueue:
+    
+    def __init__(self):
+        self.items = []
+        self.size = 0
+
+    def enqueue(self, data):
+        self.items.insert(0,data)
+        self.size += 1
+    
+    def dequeue(self):
+        data = self.items.pop()
+        self.size -=1
+        return data
+    
+    def traverse(self):
+        total_items = self.size
+
+        for item in range(total_items):
+            print(self.items[item])
+
+"""
+>>> from list_based_queue import ListQueue
+>>> food =ListQueue()
+>>> food.enqueue('eggs')
+>>> food.enqueue('ham')
+>>> food.enqueue('spam')
+# primero en entrar y primero en salir
+>>> food.dequeue()
+'eggs'
+>>> food.traverse()
+spam
+ham
+eggs
+"""
+```
+
 ### Queue basada en dos stacks
 
 Los stacks y los queue se usan de manera diferente.
