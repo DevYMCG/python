@@ -58,3 +58,21 @@ La maquina virtual puede ser ejecutado en diferentes sistemas operativos.
 **Garbage collector:** Tomar los objetos y las variables que no estan en uso y los elimina.
 
 **__pycache__:** cuando se crea la carpeta __pycache__ lo que esta adentro de esta carpeta es byte code es ese codigo intermedio que crea python al ser un lenguaje interpretado para que pueda ser leido por la maquina virtual.
+
+### ¿Comó organizar las carpetas de tus proyectos?
+
+Para comprender como organizar los proyectos de python es importante tener en cuenta dos definiciones: paquetes y módulos
+
+**Módulo:** un módulo es cualquier archivo de python. Generalmente, contiene código que puedes reutilizar.
+
+**Paquete:** Un paquete es una carpeta que contiene módulos siempre  posee el archivo __init__.py
+
+![src/paquete.PNG](src/paquete.PNG)
+
+Ejemplo de organizar la estructura de un proyecto en python.
+
+![src/estructura_de_carpetas.PNG](src/estructura_de_carpetas.PNG)
+
+# Static Typing
+
+### ¿Qué son los tipados?
