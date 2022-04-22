@@ -76,3 +76,58 @@ Ejemplo de organizar la estructura de un proyecto en python.
 # Static Typing
 
 ### ¿Qué son los tipados?
+
+Los tipados es una clasificación de los lenguajes de programación, tenemos cuatro tipos:
+
+- Estático
+- Dinámico
+- Débil
+- Fuerte
+
+El tipado del lenguaje depende de cómo trata a los tipos de datos.
+
+![src/tipos_tipado.PNG](src/tipos_tipado.PNG)
+
+**estático**
+
+El tipado estático es el que levanta un error en el tiempo de compilación, ejemplo en JAVA:
+
+![src/tipado_static.PNG](src/tipado_static.PNG)
+
+```java
+String str = "Hello" // Variable tipo String
+str = 5 // ERROR: no se puede convertir un tipo de dato en otro de esta forma.
+```
+
+**dinámico**
+
+El tipado dinámico levantan el error en tiempo de ejecución, ejemplo en Python:
+
+![src/tipado_dynamic.PNG](src/tipado_dynamic.PNG)
+
+```python
+str = "Hello" # Variable tipo String
+str = 5 # La variable ahora es de tipo Entero, no hay error
+
+## TIPADO FUERTE
+x = 1
+y = "2"
+z = x + y # ERROR: no podemos hacer estas operaciones con tipos de datos distintos entre sí
+```
+**débil**
+
+El tipado débil es el que hace un cambio en un tipo de dato para poder operar con el, como lo hace JavaScript y PHP.
+
+```js
+x = 1
+y = "2"
+z = x + y //12
+```
+
+```php
+<?php
+$str = 5 + "5" // equals 10 because "5" is implicity casted to 5 as an integer
+// PHP is weakly typed, thus is a very forgiving languaje
+```
+
+🐍 Python es un lenguaje de tipado 👾 Dinámico y 💪 Fuerte.
