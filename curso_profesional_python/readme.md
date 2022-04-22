@@ -6,7 +6,7 @@
     - [¿Cómo funciona Python?](#Cómo_funciona_Python)
     - [¿Comó organizar las carpetas de tus proyectos?](#comó_organizar_las_carpetas_de_tus_proyectos)
 - [Static Typing](#Static_typing)
-    - [¿Qué son los tipados?](#Qué_son_los _tipados)
+    - [¿Qué son los tipados?](#Qué_son_los_tipados)
     - [Tipado estático en python](#Arrays_de_dos_dimensiones)
     - [Practicando el tipado estático](#Arrays_de_dos_dimensiones)
 - [Conceptos avanzados de funciones](#Linked_lists)
