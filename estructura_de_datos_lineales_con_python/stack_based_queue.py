@@ -7,7 +7,7 @@ class Queue:
         self.inboud_stack.append(data)
     
     def dequeue(self):
-        if not self.outbound_stack:
+        if not self.outbound_stack: 
             while self.inboud_stack:
                 self.outbound_stack.append(self.inboud_stack.pop())
         
