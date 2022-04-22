@@ -127,7 +127,55 @@ z = x + y //12
 ```php
 <?php
 $str = 5 + "5" // equals 10 because "5" is implicity casted to 5 as an integer
-// PHP is weakly typed, thus is a very forgiving languaje
+// PHP is weakly typed, this is a very forgiving languaje
 ```
 
 🐍 Python es un lenguaje de tipado 👾 Dinámico y 💪 Fuerte.
+
+### Practicando el tipado estático
+
+Como hacer para que el tipado de python de tipo dinámico sea estático **Static Typing**
+
+ **Static Typing**
+
+**Asignando el tipo a la variable**
+
+ ```python
+ a: int = 5
+ print(a) // 5
+
+ b: str = 'Hola'
+ print(b) // Hola
+
+ c: bool = True
+ print(c) // True
+ ```
+
+ **Asignando el tipo a las funciones**
+
+ ```python
+def suma(a: int, b:int )->int:
+    return a + b
+
+print(suma(1,2)) // 3
+
+def suma(a: int, b:int )->int:
+    return a + b
+
+print(suma('1','2')) // 12
+ ```
+
+![src/tipado_code.PNG](src/tipado_code.PNG)
+
+En tipyng tenemos disponible la clase tupla
+
+![src/tipado_tupla_dic.PNG](src/tipado_tupla_dic.PNG)
+
+**mypy**
+
+Es modulo especial en python que nos permite mostrar los errores en consola
+
+**Ventaja de usar types**
+
+- Aporta claridad y calidad al código va a ser mucho mas entendible
+- Podremos visualizar errores antes de que el programa se ejecute.
