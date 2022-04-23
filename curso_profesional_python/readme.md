@@ -237,11 +237,28 @@ Para entender los **clousures** tenemos que entender que son las funciones anida
 
 ![src/funciones_anidadas.PNG](src/funciones_anidadas.PNG)
 
-un **clousure** es una variable que este en un scope superior y es recordada por una función que esta en un scope inferior
+un **clousure** es una variable que este en un scope superior y es recordada por una función que esta en un scope inferior. Aunque esta función sea eliminada anteriormente
 
 ![src/scope.PNG](src/scope.PNG)
 
-aqui no reconoce cambios
+```python
+def main():
+    
+    a = 1
+
+    def nested():
+        print(a)
+
+    return nested
+    
+my_func = main()
+my_func()
+
+del(main)
+
+my_func()
+
+```
 
 **Reglas para encontrar un clousure**
 - Debemos tener una nested función.
