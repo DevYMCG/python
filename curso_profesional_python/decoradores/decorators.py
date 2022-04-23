@@ -7,6 +7,13 @@ from datetime import datetime
 """
 
 def execution_time(func):
+    """
+    *args, **kwargs
+    no importa la cantidad de argumentos posicionales que 
+    se le envien la función los va a recibir,
+    no importa la cantidad de argumentos nombrados que 
+    se le envien la función los va a recibir
+    """
     def wrapper(*args, **kwargs):
         initial_time = datetime.now()
         func(*args, **kwargs)
@@ -17,6 +24,7 @@ def execution_time(func):
 
 @execution_time
 def random_func():
+    # el _ indica que nos nos interesa saber la variable en cada una de las vueltas
     for _ in range(1, 1000000):
         pass
 
