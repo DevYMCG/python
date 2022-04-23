@@ -228,3 +228,22 @@ Es la región que corresponde el ámbito de una función, donde podremos tener u
 Al escribir una o mas variables en esta region, estas podrán ser accesibles desde cualquier parte del código.
 
 ![src/global_scope.PNG](src/global_scope.PNG)
+
+### Closures
+
+Para entender los **clousures** tenemos que entender que son las funciones anidadas.
+
+**Nested functions o (Funciones anidadas):** Son funciones que estan creadas dentro de otras funciones
+
+![src/funciones_anidadas.PNG](src/funciones_anidadas.PNG)
+
+un **clousure** es una variable que este en un scope superior y es recordada por una función que esta en un scope inferior
+
+![src/scope.PNG](src/scope.PNG)
+
+**Reglas para encontrar un clousure**
+- Debemos tener una nested función.
+- La nested function debe referenciar un valor de un scope superior.
+- La función debe retornarla también.
+
+![src/scope_2.PNG](src/scope_2.PNG)
