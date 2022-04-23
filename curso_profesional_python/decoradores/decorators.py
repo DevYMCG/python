@@ -1,5 +1,11 @@
 from datetime import datetime
 
+"""
+    Cuanto tiempo tarda en ejecutarse una 
+    función para esto importamos el modulo 
+    datetime
+"""
+
 def execution_time(func):
     def wrapper(*args, **kwargs):
         initial_time = datetime.now()
