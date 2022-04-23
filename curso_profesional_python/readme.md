@@ -179,3 +179,35 @@ Es modulo especial en python que nos permite mostrar los errores en consola
 
 - Aporta claridad y calidad al código va a ser mucho mas entendible
 - Podremos visualizar errores antes de que el programa se ejecute.
+
+**Crear nuestro entorno virtual**
+
+ ```
+py -m venv venv
+ ```
+**Entrar al entorno virtual**
+
+ ```
+ .\venv\Scripts\activate
+ (venv) λ pip install mypy
+  ```
+ **Mejores prácticas usando tipo de variable**
+
+ ```python
+  def is_palindromo(String: str)->bool:
+    String = String.replace(' ', '').lower()
+    return String == String[::-1]
+
+def run():
+    print(is_palindromo(1000))
+
+
+if __name__ == '__main__':
+    run()
+
+"""
+(venv) λ mypy palindrome.py --check-untyped-defs
+palindrome.py:6: error: Argument 1 to "is_palindromo" has incompatible type "int"; expected "str"
+Found 1 error in 1 file (checked 1 source file)
+"""
+ ```
