@@ -7,8 +7,4 @@ def main():
     return nested
     
 my_func = main()
-print(my_func())
-
-
-if __name__ == '__main__':
-    main()
+my_func()
