@@ -241,6 +241,8 @@ un **clousure** es una variable que este en un scope superior y es recordada por
 
 ![src/scope.PNG](src/scope.PNG)
 
+aqui no reconoce cambios
+
 **Reglas para encontrar un clousure**
 - Debemos tener una nested función.
 - La nested function debe referenciar un valor de un scope superior.
