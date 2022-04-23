@@ -211,3 +211,20 @@ palindrome.py:6: error: Argument 1 to "is_palindromo" has incompatible type "int
 Found 1 error in 1 file (checked 1 source file)
 """
  ```
+ # Conceptos avanzados de funciones
+
+ ### Scope: alcance de las variables
+
+ Una variable solo está disponible dentro de la región donde fue creada.
+
+**Local Scope**
+
+Es la región que corresponde el ámbito de una función, donde podremos tener una o mas variables, las variables van a ser accesibles únicamente en esta region y no serán visibles para otras regiones
+
+![src/local_scope.PNG](src/local_scope.PNG)
+
+**Global Scope**
+
+Al escribir una o mas variables en esta region, estas podrán ser accesibles desde cualquier parte del código.
+
+![src/global_scope.PNG](src/global_scope.PNG)

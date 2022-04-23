@@ -10,7 +10,7 @@ def is_primo(numero: int)->bool:
     return cont==2  
 
 def run():
-    print(is_primo(17))
+    print(is_primo('17'))
 
 
 if __name__ == '__main__':
