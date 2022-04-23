@@ -316,3 +316,24 @@ saludo()
 ### Iteradores
 
 > Una estructura de datos para guardar datos infinitos.
+
+Antes de entender qué son los iteradores, primero debemos entender a los iterables.
+
+Son todos aquellos objetos que podemos recorrer en un ciclo. Son aquellas estructuras de datos divisibles en elementos únicos que yo puedo recorrer en un ciclo.
+
+Pero en Python las cosas no son así. Los iterables se convierten en iteradores.
+
+Ejemplo:
+
+![src/iterador.PNG](src/iterador.PNG)
+
+**¿Comó construir un iterador?**
+
+![src/construir_iterador.PNG](src/construir_iterador.PNG)
+
+**ventajas de usar iteradores**
+
+- Un iterador nos ahorra recursos
+- Ocupan poca memoria
+
+El ciclo “for” dentro de Python, no existe. Es un while con StopIteration. 🤯🤯🤯
