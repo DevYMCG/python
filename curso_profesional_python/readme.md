@@ -337,3 +337,7 @@ Ejemplo:
 - Ocupan poca memoria
 
 El ciclo “for” dentro de Python, no existe. Es un while con StopIteration. 🤯🤯🤯
+
+### La sucesión de Fibonacci
+
+Ejemplo: 0 1 1 2 3 5 8 13 21 34 55 89 144 ....
