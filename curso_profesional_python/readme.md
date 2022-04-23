@@ -310,3 +310,9 @@ saludo()
 #Esto se añade a mi función original
 #¡Hola!
 ```
+
+# Estructura de datos avanzadas
+
+### Iteradores
+
+> Una estructura de datos para guardar datos infinitos.
