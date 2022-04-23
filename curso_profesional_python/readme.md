@@ -266,3 +266,47 @@ my_func()
 - La función debe retornarla también.
 
 ![src/scope_2.PNG](src/scope_2.PNG)
+
+### Decoradores
+
+Un **decorador** es un clousure su definión: Función que recibe como parámetro otra función, le añade cosas, y retorna una función diferente.
+
+```python
+def decorador(func):
+    def envoltura():
+        print('Esto se añade a mi función original')
+        func()
+    return envoltura
+
+def saludo():
+    print('¡Hola!')
+
+saludo();
+# output
+# ¡Hola!
+
+saludo = decorador(saludo)
+saludo()
+#output
+#Esto se añade a mi función original
+# ¡Hola!
+```
+
+Esto se puede simplificar de la siguiente manera:
+
+```python
+def decorador(func):
+    def envoltura():
+        print('Esto se añade a mi función original')
+        func()
+    return envoltura
+
+@decorador
+def saludo():
+    print('¡Hola!')
+
+saludo()
+#output
+#Esto se añade a mi función original
+#¡Hola!
+```
