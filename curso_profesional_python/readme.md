@@ -377,3 +377,24 @@ if __name__ == "__main__":
         time.sleep(1)
 
 ```
+
+### Generadores
+
+"Sugar syntax" de los iteradores.
+
+- Los generadores son funciones a diferencia de los iteradores que son clases.
+
+Nota: Yield es exactamente lo mismo que return la diferencia es que return para la función y retorna mientras yield pausa la función hasta donde estaba ese yiel
+
+![src/generadores.PNG](src/generadores.PNG)
+
+list comprehensions almacena todos los elementos en memoria por ejemplo:
+
+![src/generadores_list.PNG](src/generadores_list.PNG)
+
+**Ventajas de usar iteradores**
+
+- Mas facil de escribir que un iterador
+- tienes la mismas ventajas que el iterador
+
+
