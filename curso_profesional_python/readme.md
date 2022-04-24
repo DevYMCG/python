@@ -517,6 +517,31 @@ if __name__ == "__main__":
     print(list1)
 ```
 
+# Bonus
 
+### Manejo de fechas
 
+**modulo datetime**
 
+![src/datetime.PNG](src/datetime.PNG)
+
+> Es importante evitar usar datetime.now() porque toma la hora local. Mejor usar datetime.utcnow() para usar la hora universal. Nosotros trabajamos con equipos de todo el mundo, no podemos usar hora local
+
+**obtener el dia de hoy**
+
+![src/date_today.PNG](src/date_today.PNG)
+
+**año, mes y dia**
+
+![src/dia_mes_anho.PNG](src/dia_mes_anho.PNG)
+
+**formateo de fechas**
+
+- mm/dd/yyyy
+- dd/mm/yyyy
+
+![src/tabla_codigos_formatos.PNG](src/tabla_codigos_formatos.PNG)
+
+**codigo**
+
+![src/datetime_code.PNG](src/datetime_code.PNG)
