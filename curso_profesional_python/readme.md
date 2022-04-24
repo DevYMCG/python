@@ -494,6 +494,7 @@ Es lo contrario de la intercepción es el resultado de quedarme con los elemento
 ![src/diferencia_simetrica.PNG](src/diferencia_simetrica.PNG)
 
 **ejemplo**
+
 ![src/diferencia_simetrica_ejm.PNG](src/diferencia_simetrica_ejm.PNG)
 
 
