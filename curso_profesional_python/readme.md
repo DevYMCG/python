@@ -433,6 +433,7 @@ if __name__ == "__main__":
 Una colección desordenada de elementos únicos e inmutables.
 
 **¿Como crear un sets?**
+
 ![src/sets.PNG](src/sets.PNG)
 
 **Como entiende python la declaración de sets**
