@@ -498,6 +498,10 @@ Es lo contrario de la intercepción es el resultado de quedarme con los elemento
 
 ![src/diferencia_simetrica_ejm.PNG](src/diferencia_simetrica_ejm.PNG)
 
+### Eliminando los repetidos de una lista
+
+
+
 
 
 
