@@ -427,3 +427,75 @@ if __name__ == "__main__":
         time.sleep(1)
 
 ```
+
+### sets
+
+Una colección desordenada de elementos únicos e inmutables.
+
+**¿Como crear un sets?**
+![src/sets.PNG](src/sets.PNG)
+
+**Como entiende python la declaración de sets**
+
+![src/declaracion_sets.PNG](src/declaracion_sets.PNG)
+
+**casting con los sets**
+
+![src/catcs_sets.PNG](src/catcs_sets.PNG)
+
+**Añadir elementos a un sets**
+
+![src/anadir_elementos_sets.PNG](src/anadir_elementos_sets.PNG)
+
+**diferencias entre discard y remove**
+
+![src/quitar_elementos_sets.PNG](src/quitar_elementos_sets.PNG)
+
+**Otra forma de borrar los elementos**
+
+![src/borrar_elementos_sets.PNG](src/borrar_elementos_sets.PNG)
+
+### Operaciones con sets
+
+**Unión**
+
+Resultado de combinar todos los elementos entre ambos
+
+![src/union.PNG](src/union.PNG)
+
+Ejemplo
+
+![src/union_ejm.PNG](src/union_ejm.PNG)
+
+**Intersección**
+
+Resultado de combinar ambos sets pero quedarme solamente con los elementos que tienen en común
+
+![src/interseccion.PNG](src/interseccion.PNG)
+
+**ejemplo**
+
+![src/interseccion_ejm.PNG](src/interseccion_ejm.PNG)
+
+**Diferencias**
+
+Es el resultado de tomar dos sets y de uno quitar todos los elementos que tiene el otro
+
+![src/diferencia.PNG](src/diferencia.PNG)
+
+**Ejemplo**
+
+![src/diferencia_ejm.PNG](src/diferencia_ejm.PNG)
+
+**Diferencia Simétrica**
+
+Es lo contrario de la intercepción es el resultado de quedarme con los elementos de ambos sets pero sin los que se comparten
+
+![src/diferencia_simetrica.PNG](src/diferencia_simetrica.PNG)
+
+**ejemplo**
+![src/diferencia_simetrica_ejm.PNG](src/diferencia_simetrica_ejm.PNG)
+
+
+
+
