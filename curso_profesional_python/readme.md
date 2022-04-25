@@ -545,3 +545,42 @@ if __name__ == "__main__":
 **codigo**
 
 ![src/datetime_code.PNG](src/datetime_code.PNG)
+
+### Time zones
+
+Sabemos que en cada país la hora es diferente
+
+- 00:00
+- 22:00
+- 22:00
+
+**modulo pytz**
+
+Este modulo nos permite trabajar con zonas horarias
+
+```
+# ingresamos al modulo virtual
+λ .\venv\Scripts\activate
+#(venv) λ pip install pytz
+ ```
+
+link para consultar tu zona horaria
+
+https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+```python
+from datetime import datetime
+import pytz
+
+bogota_timezone = pytz.timezone("America/Bogota")
+bogota_date = datetime.now(bogota_timezone)
+print("Bogota: ", bogota_date.strftime("%d/%m/%Y, %H:%M:%S"))
+
+mexico_timezone = pytz.timezone("America/Mexico_City")
+mexico_date = datetime.now(mexico_timezone)
+print("Ciudad de México: ", mexico_date.strftime("%d/%m/%Y, %H:%M:%S"))
+
+caracas_timezone = pytz.timezone("America/Caracas")
+caracas_date = datetime.now(caracas_timezone)
+print("Caracas: ", caracas_date.strftime("%d/%m/%Y, %H:%M:%S"))
+ ```
