@@ -194,95 +194,128 @@ Las variables, a diferencia de los demás lenguajes de programación, no debes d
 
 Las listas las declaras con corchetes. Estas pueden tener una lista dentro o cualquier tipo de dato.
 
+```python
  >>> L = [22, True, ”una lista”, [1, 2]] 
  >>> L[0] 
  22
+ ```
 
 #### Tuplas
 
 Las tuplas se declaran con paréntesis, recuerda que no puedes editar los datos de una tupla después de que la has creado.
 
+```python
  >>> T = (22, True, "una tupla", (1, 2)) 
  >>> T[0] 
  22
+```
 
 #### Diccionarios
 
 **En los diccionarios tienes un grupo de datos con un formato:** la primera cadena o número será la clave para acceder al segundo dato, el segundo dato será el dato al cual accederás con la llave. Recuerda que los diccionarios son listas de llave:valor.
 
+```python
  >>> D = {"Kill Bill": "Tamarino", "Amelie": "Jean-Pierre Jeunet"} 
  >>> D["Kill Bill"]
     "Tamarino"
-    Conversiones
+```
+
+#### Conversiones
 
 - De flotante a entero:
 
+```python
  >>> int(4.3)
  4
+```
 
 - De entero a flotante:
 
+```python
  >>> float(4) 
  4.0
+```
 
 - De entero a string:
 
+```python
  >>> str(4.3) 
  "4.3"
+```
 
 - De tupla a lista:
 
+```python
  >>> list((4, 5, 2)) 
  [4, 5, 2]
+```
 
 #### Operadores Comunes
 
 - Longitud de una cadena, lista, tupla, etc.:
 
+```python
  >>> len("key") 
  3
+```
 
 - Tipo de dato:
 
+```python
  >>> type(4) 
  < type int >
+```
 
 - Aplicar una conversión a un conjunto como una lista:
 
+```python
  >>> map(str, [1, 2, 3, 4])
  ['1', '2', '3', '4']
+```
 
 - Redondear un flotante con x número de decimales:
 
+```python
 >>> round(6.3243, 1)
  6.3
+```
 
 - Generar un rango en una lista (esto es mágico):
 
+```python
  >>> range(5) 
  [0, 1, 2, 3, 4]
+```
 
 - Sumar un conjunto:
 
+```python
  >>> sum([1, 2, 4]) 
  7
+```
 
 - Organizar un conjunto:
 
+```python
  >>> sorted([5, 2, 1]) 
  [1, 2, 5]
+```
 
 - Conocer los comandos que le puedes aplicar a x tipo de datos:
 
+```python
  >>>Li = [5, 2, 1]
  >>>dir(Li)
  >>>['append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
- 
+```
+
 ‘append’, ‘count’, ‘extend’, ‘index’, ‘insert’, ‘pop’, ‘remove’, ‘reverse’, ‘sort’ son posibles comandos que puedes aplicar a una lista.
 
 #### Información sobre una función o librería:
 
+```python
  >>> help(sorted) 
+```
 
  (Aparecerá la documentación de la función sorted)
 
