@@ -7,8 +7,8 @@
     - [¿Comó organizar las carpetas de tus proyectos?](#comó_organizar_las_carpetas_de_tus_proyectos)
 - [Static Typing](#Static_typing)
     - [¿Qué son los tipados?](#Qué_son_los_tipados)
-    - [Tipado estático en python](#Arrays_de_dos_dimensiones)
-    - [Practicando el tipado estático](#Arrays_de_dos_dimensiones)
+    - [Tipado estático en python](#Tipado_estático_en_python)
+    - [Practicando el tipado estático](#Practicando_el_tipado_estático)
 - [Conceptos avanzados de funciones](#Linked_lists)
     - [Scope: alcance de las variables](#Nodos_y_singly_linked_list)
     - [Closures](#Crear_nodos)
@@ -47,11 +47,9 @@ python por el contrario es un lenguaje **interpretado** al realizarse la convers
 
 ![src/interpretado.PNG](src/interpretado.PNG)
 
- El byte code es un lenguaje especial que es de mas bajo nivel que python que puede ser leido por un **interprete** la caracteristica especial es que este lenguaje es leido por una maquina virtual
+ El byte code es un lenguaje especial que es de mas bajo nivel que python que puede ser leido por un **interprete** la caracteristica especial es que este lenguaje es leido por una maquina virtual. La maquina virtual puede ser ejecutado en diferentes sistemas operativos.
 
 ![src/interpretado_vm.PNG](src/interpretado_vm.PNG)
-
-La maquina virtual puede ser ejecutado en diferentes sistemas operativos.
 
 **Definiciones**
 
