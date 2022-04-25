@@ -402,10 +402,12 @@ En este caso while tiene una condición que determina hasta cuándo se ejecutar�
 
 Ejemplo:
 
+```python
  >>> x = 0 
  >>> while x < 10: 
  ... 	print x 
  ... 	x += 1
+ ```
 
 En este ejemplo preguntará si es menor que diez. Dado que es menor imprimirá x y luego sumará una unidad a x. Luego x es 1 y como sigue siendo menor a diez se seguirá ejecutando, y así sucesivamente hasta que x llegue a ser mayor o igual a 10.
 
