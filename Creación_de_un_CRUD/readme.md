@@ -41,13 +41,15 @@
 ### Guia de instalación y conceptos básicos
 
 #### ¿Qué es Python?
+
 Python es un lenguaje de programación creado por Guido Van Rossum, con una sintaxis muy limpia, ideado para enseñar a la gente a programar bien. Se trata de un lenguaje interpretado o de script.
 
 #### Ventajas:
-**Legible:** sintaxis intuitiva y estricta.
-**Productivo:** ahorra mucho código.
-**Portable:** para todo sistema operativo.
-**Recargado:** viene con muchas librerías por defecto.
+
+- **Legible:** sintaxis intuitiva y estricta.
+- **Productivo:** ahorra mucho código.
+- **Portable:** para todo sistema operativo.
+- **Recargado:** viene con muchas librerías por defecto.
 
 #### Instalación
 Existen dos versiones de Python que tienen gran uso actualmente, Python 2.x y Python 3.x, para este curso necesitas usar una versión 3.x
