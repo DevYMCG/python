@@ -554,3 +554,4 @@ Otras funciones se pueden encontrar en módulos
         - global keyword
     - orden de ejecución:
         - Arriba para abajo
+        - Izquierda a derecha
