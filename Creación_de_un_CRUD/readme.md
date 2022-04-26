@@ -526,3 +526,31 @@ Expresiones son instrucciones para el interprete para evaluar la expresión. Los
 **orden de operaciones**
 
 PEMDAS = Paréntesis, Exponente, Multiplicación-División, Adición-Sustracción
+
+### Funciones
+
+En el contexto de la programación las funciones son simplemente una agrupación de enunciados(statments) que tienen un nombre. Una función tiene un nombre, debe ser descriptivo, puede tener parámetros y puede regresar un valor después que se generó el cómputo.
+
+Python es un lenguaje que se conoce como batteries include(baterías incluidas) esto significa que tiene una librería estándar con muchas funciones y librerías.
+
+Para declarar funciones que no son las globales, las built-in functions, necesitamos importar un módulo.
+
+Con el keyword **def** declaramos una función.
+
+![src/funciones.PNG](src/funciones.PNG)
+
+Otras funciones se pueden encontrar en módulos
+- Para utilizarlas es necesario importar el módulo
+    - Ejm: import math
+- Para declarar una función, utilizamos el keyword **def**
+    - Ej. def my_function(first_arg, second_arg=None)
+- Las funciones se pueden componer.
+    - Ej. def sum_two_numbers(x,y):
+        return x + y
+
+        other_function(sum_two_numbers(3,4))
+- Los argumentos pueden ser posicionales o con nombre
+    - Los parámetros y variables son locales a la función
+        - global keyword
+    - orden de ejecución:
+        - Arriba para abajo
