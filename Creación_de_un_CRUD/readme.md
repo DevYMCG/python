@@ -468,9 +468,61 @@ En programación estos operadores son muy similares a nuestras clases básicas d
 20         
 >>> 2 ** 8 
 256        
->>>        
+>>> 'a' + 'b'
+'ab'
+>>> 'b' * 5
+'bbbbb'       
 ```
 
 Los operadores son contextuales, dependen del tipo de valor. Un valor es la representación de una entidad que puede ser manipulada por un programa.
 
-Podemos conocer el tipo del valor con type() y nos devolverá algo similar a <class 'init'>, <class 'float'>, <class 'str'>. Dependiendo del tipo los operadores van a funcionar de manera diferente.
+Podemos conocer el tipo del valor con **type()** y nos devolverá algo similar a <class 'init'>, <class 'float'>, <class 'str'>. Dependiendo del tipo los operadores van a funcionar de manera diferente.
+
+#### Operadores lógicos: 
+
+Sirven para realizar comparaciones, devuelven un valor verdadero o falso.
+
+Operador	|Descripción				| Ejemplo
+
+and	      |¿se cumple a y b? 	| r=True and False # r es False
+
+or	      |¿se cumple a o b?	| r=True o False # r es True
+
+not	      | No a							| r=not True #r es False
+
+#### Operadores relacionales: 
+
+comparan dos expresiones y devuelven un valor verdadero o falso.
+
+Operador	| Descripción 						|	Ejemplo
+
+== 				|	¿Son iguales a y b?			| r=5==3 # r es False
+
+!= 				|	¿Son distintos a y b?		| r=5!=3 # r es True
+
+< 				|	¿Es a menor que b?			| r=5<3 # r es False
+
+> 				|	¿Es a mayor que b?			| r=5>3 3 r es True
+
+<= 				|	¿Es a menor o igual que b?	| r=5<=5 # r es True
+
+>= 				|	¿Es a mayor o igual que b?	| r=5>=3 # r es True
+
+### Variables y expresiones
+
+Una variable es simplemente el contenedor de un valor. Es una forma de decirle a la computadora de que nos guarde un valor para luego usarlo.
+
+Python es un lenguaje dinámico, este concepto de privado y público se genera por convenciones del lenguaje. En programación el signo = significa asignación.
+
+Si una variable esta en mayúscula, usualmente se refiere a una constante, no debería reasignarse. Es una convención.
+
+Reglas de Variables:
+
+1. Pueden contener números y letras
+2. No deben comenzar con número
+3. Múltiples palabras se unen con _
+4. No se pueden utilizar palabras reservadas
+
+Expresiones son instrucciones para el interprete para evaluar la expresión. Los enunciados tienen efectos dentro del programa, como print que genera un output.
+
+PEMDAS = Paréntesis, Exponente, Multiplicación-División, Adición-Sustracción
