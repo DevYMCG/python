@@ -482,31 +482,24 @@ Podemos conocer el tipo del valor con **type()** y nos devolverá algo similar a
 
 Sirven para realizar comparaciones, devuelven un valor verdadero o falso.
 
-Operador	|Descripción				| Ejemplo
-
-and	      |¿se cumple a y b? 	| r=True and False # r es False
-
-or	      |¿se cumple a o b?	| r=True o False # r es True
-
-not	      | No a							| r=not True #r es False
+| Operador	|Descripción				| Ejemplo|
+| ----------- | ----------------------------  |------------- |
+| and	      |¿se cumple a y b? 	          | r=True and False # r es False |
+| or	      |¿se cumple a o b?	          | r=True o False # r es True |
+| not	      | No a						  | r=not True #r es False |
 
 #### Operadores relacionales: 
 
 comparan dos expresiones y devuelven un valor verdadero o falso.
 
-Operador	| Descripción 						|	Ejemplo
-
-== 				|	¿Son iguales a y b?			| r=5==3 # r es False
-
-!= 				|	¿Son distintos a y b?		| r=5!=3 # r es True
-
-< 				|	¿Es a menor que b?			| r=5<3 # r es False
-
-> 				|	¿Es a mayor que b?			| r=5>3 3 r es True
-
-<= 				|	¿Es a menor o igual que b?	| r=5<=5 # r es True
-
->= 				|	¿Es a mayor o igual que b?	| r=5>=3 # r es True
+|Operador	    | Descripción 					|	Ejemplo|
+| ------------- | ----------------------------  |------------- |
+| == 			|	¿Son iguales a y b?			| r=5==3 # r es False|
+| != 			|	¿Son distintos a y b?		| r=5!=3 # r es True |
+| < 			|	¿Es a menor que b?			| r=5<3 # r es False |
+| > 			|	¿Es a mayor que b?			| r=5>3 3 r es True  |
+| <= 			|	¿Es a menor o igual que b?	| r=5<=5 # r es True |
+| >= 			|	¿Es a mayor o igual que b?	| r=5>=3 # r es True |
 
 ### Variables y expresiones
 
@@ -516,10 +509,10 @@ Python es un lenguaje dinámico, este concepto de privado y público se genera p
 
 Si una variable esta en mayúscula, usualmente se refiere a una constante, no debería reasignarse. Es una convención.
 
-message = 'How are you?'
-_age = 20 // variable privada
-PI = 3.14159
-__do_not_touch = 'something important' // variable que no debe modificarse
+- message = 'How are you?'
+- _age = 20 // variable privada
+- PI = 3.14159
+- __do_not_touch = 'something important' // variable que no debe modificarse
 
 #### Reglas de Variables:
 
