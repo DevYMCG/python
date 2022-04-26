@@ -3,7 +3,6 @@
 ### Introducción
 - [Básicos del lenguaje](#Introducción)
     - [Guia de instalación y conceptos básicos](#Qué_necesitas_saber_para_tomar_el_curso)
-    - [Archivos y slides del curso práctico de Python](#Cómo_funciona_Python)
     - [IMPORTANTE: instalación Ubuntu Bash en windows para facilitarte el seguimiento del curso desde windows](#comó_organizar_las_carpetas_de_tus_proyectos)
     - [¿Qué es la programación?](#que_es_la_programacion)
     - [¿Por qué programar con Python?](#que_es_la_programacion)
@@ -66,7 +65,7 @@ Al finalizar la instalación haz lo siguiente para corroborar una instalación c
 - Presiona las teclas Windows + R para abrir la ventana de Ejecutar.
 - Una vez abierta la ventana Ejecutar escribe el comando cmd y presiona ctrl+shift+enter para ejecutar una línea de comandos con permisos de administrador.
 - Windows te preguntará si quieres abrir el Procesador de comandos de Windows con permisos de administrador, presiona sí.
-- En la línea de comandos escribe python
+- En la línea de comandos escribe py o python
 
 Tu consola se mostrará así.
 
@@ -162,7 +161,8 @@ ejemplo: {“clave”:”valor”}, {“nombre”:”Fernando”}
 
 - **Tuplas:** también son un grupo de datos igual que una lista con la diferencia que una tupla después de creada no se puede modificar.
 
-ejemplos: (1,2,3, ”hola” , (1,2,3) ), (1,“Hola”,True ) (Pero jamás podremos cambiar los elementos dentro de esa Tupla)
+ejemplos: (1,2,3, ”hola” , (1,2,3) ), (1,“Hola”,True ) 
+(Pero jamás podremos cambiar los elementos dentro de esa Tupla)
 
 En Python trabajas con módulos y ficheros que usas para importar las librerías.
 
@@ -173,6 +173,7 @@ Las funciones las defines con **def** junto a un nombre y unos paréntesis que r
 `def nombre_de_la_función(parametros):`
 
 Después por indentación colocas los datos que se ejecutarán desde la función:
+
 ```python
  >>> def my_first_function():
  ...	return “Hello World!” 
@@ -416,3 +417,19 @@ Cómo seguir
 No te preocupes si en este punto no entiendes algunos de estos conceptos, sigue con el curso donde vamos a realizar ejercicios que te ayuden a comprender y poder aplicar cada una de las características de Python.
 
 Adelante!
+
+## ¿Qué es la programación?
+
+Python es uno de los lenguajes más emocionantes de la actualidad y puedes lograr muchas cosas con él. Este curso te va a servir como una introducción al lenguaje.
+
+### ¿Qué es la programación?
+
+Es una disciplina que combina parte de otras disciplinas como las Matemáticas, Ingeniería y la Ciencia. Sin embargo, la habilidad más importante es resolver problemas. Es lo que harás todos los días como programador o programadora.
+
+La programación es una secuencia de instrucciones que le damos a la computadora para que haga lo que nosotros deseamos. Podemos construir una aplicación web, móvil, un programa que lleve cohetes a la luna o marte, resolver problemas de finanzas.
+
+La estructura de un programa. Casi todos los programas tienen un :
+- input, 
+- output, 
+- operaciones matemáticas, 
+- ejecución condicional y repeticiones
