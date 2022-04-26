@@ -516,7 +516,12 @@ Python es un lenguaje dinámico, este concepto de privado y público se genera p
 
 Si una variable esta en mayúscula, usualmente se refiere a una constante, no debería reasignarse. Es una convención.
 
-Reglas de Variables:
+message = 'How are you?'
+_age = 20 // variable privada
+PI = 3.14159
+__do_not_touch = 'something important' // variable que no debe modificarse
+
+#### Reglas de Variables:
 
 1. Pueden contener números y letras
 2. No deben comenzar con número
@@ -524,5 +529,7 @@ Reglas de Variables:
 4. No se pueden utilizar palabras reservadas
 
 Expresiones son instrucciones para el interprete para evaluar la expresión. Los enunciados tienen efectos dentro del programa, como print que genera un output.
+
+**orden de operaciones**
 
 PEMDAS = Paréntesis, Exponente, Multiplicación-División, Adición-Sustracción
