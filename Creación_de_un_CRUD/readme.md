@@ -738,3 +738,16 @@ Las listas son una secuencia de valores. A diferencia de los strings, las listas
 En Python, las listas son referenciales. Una lista no guarda en memoria los objetos, sólo guarda la referencia hacia donde viven los objetos en memoria
 
 Se inician con [] o con la built-in function list.
+
+**Listas en python**
+- Como los strings, las listas son secuencias de valores.
+    - En las listas, los valores pueden tener cualquier tipo
+- Ejm.
+    - [2,5,6]
+    - ['Colombia', 'Mexico', 'Argentina']
+    - ['Tacos', 3, 'arepas', 6, 'chorizo', 9]
+- Las listas son mutables, a diferencia de los strings
+    - my_list = [1,2,3]
+    - my_list[2] = 6
+- Los indices de las listas, funcionan igual que los de los string
+- Las listas se inician con [] o con la función list
