@@ -674,3 +674,16 @@ Los for loops nos permiten iterar a través de una secuencia y los while loops n
 Es una convención usar la letra i como variable en nuestro for, pero podemos colocar la que queramos.
 
 range: Nos da un objeto rango, es un iterador sobre el cual podemos generar secuencias.
+
+### While loops
+
+Al igual que las for loops, las while loops nos sirve para iterar, pero las for loops nos sirve para iterar a lo largo de una secuencia mientras que las while loops nos sirve para iterar mientras una condición sea verdadera.
+
+```python
+def cuenta_regresiva(n):
+    while n > 0:
+        print(n)
+        n- = 1
+```
+
+Si no tenemos un mecanismo para convertir el mecanismo en falsedad, entonces nuestro while loops se ira al infinito(infinite loop).
