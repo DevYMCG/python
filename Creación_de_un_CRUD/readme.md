@@ -665,8 +665,6 @@ Las iteraciones es uno de los conceptos más importantes en la programación. En
 
 Los for loops nos permiten iterar a través de una secuencia y los while loops nos permiten iterara hasta cuando una condición se vuelva falsa.
 
-### for loops:
-
 - Tienen dos keywords break y continue que nos permiten salir anticipadamente de la iteración
 - Se usan cuando se quiere ejecutar varias veces una o varias instrucciones.
 - for [variable] in [secuencia]:
