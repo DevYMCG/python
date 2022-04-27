@@ -581,6 +581,7 @@ Otras funciones se pueden encontrar en módulos
 | F 	|	F	 | F     |
 
 - **or** es verdadero cuando uno de los dos valores es verdadero.
+
 | X	    |   Y 	 |	OR  |
 | ----- | ------ |----- |
 | T 	|	T	 | T    |
