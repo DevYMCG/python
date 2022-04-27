@@ -581,12 +581,12 @@ Otras funciones se pueden encontrar en módulos
 | F 	|	F	 | F     |
 
 - **or** es verdadero cuando uno de los dos valores es verdadero.
-|X	    | Y 	 |	OR  |
-| ------| ------ |------ |
-| T 	|	T	 | T     |
-| T 	|	F	 | T     |
-| F 	|	T	 | T     |
-| F 	|	F	 | F     |
+| X	    |   Y 	 |	OR  |
+| ----- | ------ |----- |
+| T 	|	T	 | T    |
+| T 	|	F	 | T    |
+| F 	|	T	 | T    |
+| F 	|	F	 | F    |
 
 - **not** es lo contrario al valor. Falso es Verdadero. Verdadero es Falso.
 
