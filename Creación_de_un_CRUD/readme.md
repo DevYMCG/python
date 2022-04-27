@@ -635,7 +635,7 @@ True
 >>> platzi.startswith('x')
 False
 ```
-## Operaciones con strings: Slices en python
+### Operaciones con strings: Slices en python
 
 Los slices en Python nos permiten manejar secuencias de una manera poderosa.
 
@@ -643,4 +643,34 @@ Slices en español significa ““rebanada””, si tenemos una secuencia de e
 
 ```python
 secuencia[comienzo:final:pasos]
+
+>>> fruit = 'banana'
+>>> fruit[:3]
+'ban'
+>>> fruit[3:]
+'ana'
+>>> fruit[3:3]
+''
+>>> fruit[:]
+'banana'
+>>> fruit[1:-1:2]
+'aa'
+>>> fruit[::-1]
+'ananab'
 ```
+
+### For loops
+
+Las iteraciones es uno de los conceptos más importantes en la programación. En Python existen muchas manera de iterar pero las dos principales son los for loops y while loops.
+
+Los for loops nos permiten iterar a través de una secuencia y los while loops nos permiten iterara hasta cuando una condición se vuelva falsa.
+
+### for loops:
+
+- Tienen dos keywords break y continue que nos permiten salir anticipadamente de la iteración
+- Se usan cuando se quiere ejecutar varias veces una o varias instrucciones.
+- for [variable] in [secuencia]:
+
+Es una convención usar la letra i como variable en nuestro for, pero podemos colocar la que queramos.
+
+range: Nos da un objeto rango, es un iterador sobre el cual podemos generar secuencias.
