@@ -610,3 +610,37 @@ Otras funciones se pueden encontrar en módulos
     - id(apple) 
 
 > id nos permite saber donde vive esta variable id(apple)
+
+# Operaciones con Strings en Python
+Los strings tienen varios métodos que nosotros podemos utilizar.
+
+- upper: convierte todo el string a mayúsculas
+- lower: convierte todo el string a minúsculas
+- find: encuentra el indice en donde existe un patrón que nosotros definimos
+- startswith: significa que empieza con algún patrón.
+- endswith: significa que termina con algún patrón
+- capitalize: coloca la primera letra en mayúscula y el resto en minúscula.
+- in y not in nos permite saber con cualquier secuencia sin una subsecuencia o substrings se encuentra adentro de la secuencia mayor.
+- dir: Nos dice todos los métodos que podemos utilizar dentro de un objeto.
+- help: nos imprime en pantalla el docstrings o comentario de ayuda o instrucciones que posee la función. Casi todas las funciones en Python las tienen.
+
+```python
+>>> platzi = 'platzi'
+>>> platzi.upper()
+'PLATZI'
+>>> platzi.find('la')
+1
+>>> platzi.startswith('p')
+True
+>>> platzi.startswith('x')
+False
+```
+# Operaciones con strings: Slices en python
+
+Los slices en Python nos permiten manejar secuencias de una manera poderosa.
+
+Slices en español significa ““rebanada””, si tenemos una secuencia de elementos y queremos una rebanada tenemos una sintaxis para definir qué pedazos queremos de esa secuencia.
+
+```python
+secuencia[comienzo:final:pasos]
+```
