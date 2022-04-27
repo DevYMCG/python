@@ -635,7 +635,7 @@ True
 >>> platzi.startswith('x')
 False
 ```
-# Operaciones con strings: Slices en python
+## Operaciones con strings: Slices en python
 
 Los slices en Python nos permiten manejar secuencias de una manera poderosa.
 
