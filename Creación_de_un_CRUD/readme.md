@@ -555,3 +555,42 @@ Otras funciones se pueden encontrar en módulos
     - orden de ejecución:
         - Arriba para abajo
         - Izquierda a derecha
+
+### Estructuras condicionales
+
+- Una expresión booleana siempre se evalua como dos opciones verdadero (True) o como falso (False)
+- Operadores de comparación
+    - x = 2
+    - y = 3
+    - x == y
+    - x != y
+    - x > y
+    - x < y
+    - x >= y
+    - x <= y
+
+- Operadores logicos
+
+- **and:** unicamente es verdadero cuando ambos valores son verdaderos
+
+|X	    | Y 	 |	AND  |
+| ------| ------ |------ |
+| T 	|	T	 | T     |
+| T 	|	F	 | F     |
+| F 	|	T	 | F     |
+| F 	|	F	 | F     |
+
+- **or** es verdadero cuando uno de los dos valores es verdadero.
+|X	    | Y 	 |	OR  |
+| ------| ------ |------ |
+| T 	|	T	 | T     |
+| T 	|	F	 | T     |
+| F 	|	T	 | T     |
+| F 	|	F	 | F     |
+
+- **not** es lo contrario al valor. Falso es Verdadero. Verdadero es Falso.
+
+|X	    |  Y 	 |
+| ------| ------ |
+| T 	|	F	 |
+| F 	|	T	 | 
