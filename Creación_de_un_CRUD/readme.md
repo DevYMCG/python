@@ -595,3 +595,18 @@ Otras funciones se pueden encontrar en módulos
 | ------| ------ |
 | T 	|	F	 |
 | F 	|	T	 | 
+
+### Strings en Python 
+
+- Los strings o cadenas de textos tienen un comportamiento distinto a otros tipos como los booleanos, enteros, floats.
+    - Las cadenas son secuencias
+    - Las secuencias  todas se pueden acceder a través de un índice.
+        - apple = 'apple'
+          apple[1]
+- Podemos saber la longitud de un string, cuántos caracteres se encuentran en esa secuencia. 
+    - Lo podemos saber con la built-in function global llamada len.
+        - len(apple)
+- Algo importante a tener en cuenta cuando hablamos de strings es que estos son inmutables, esto significa que cada vez que modificamos uno estamos generando un nuevo objeto en memoria.
+    - id(apple) 
+
+> id nos permite saber donde vive esta variable id(apple)
