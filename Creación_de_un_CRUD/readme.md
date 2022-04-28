@@ -890,4 +890,61 @@ Sólo podemos utilizar +(suma) y *(multiplicación).
 [14, 11, 9, 2, 3, 7, 2, 5, 15, 11]                          
 ```
 
+### Diccionarios
 
+Los diccionarios se conocen con diferentes nombres a lo largo de los lenguajes de programación como HashMaps, Mapas, Objetos, etc. En Python se conocen como Diccionarios.
+
+Un diccionario es similar a una lista sabiendo que podemos acceder a través de un indice, pero en el caso de las listas este índice debe ser un número entero. Con los diccionarios puede ser cualquier objeto, normalmente los verán con strings para ser más explicitos, pero funcionan con muchos tipos de llaves…
+
+Un diccionario es una asociación entre llaves(keys) y valores(values) y la referencia en Python es muy precisa. Si abres un diccionario verás muchas palabras y cada palabra tiene su definición.
+
+Para iniciar un diccionario se usa {} o con la función dict
+    - Ejm.
+    - productos = {}
+    - productos['leche'] = 23.50
+
+Estos también tienen varios métodos. Siempre puedes usar la función dir para saber todos los métodos que puedes usar con un objeto.
+
+Si queremos ciclar a lo largo de un diccionario tenemos las opciones:
+
+- keys: nos imprime una lista de las llaves
+    - Ejm.
+        - for key in my_dict_keys():
+            pass
+- values nos imprime una lista de los valores
+    - Ejm.
+    - for values in my_dict_values():
+        pass
+- items. nos manda una lista de tuplas de los valores
+    - Ejm.
+        - for key, value in my_dict_items():
+            pass
+
+```python
+>>> rae = {}
+>>> rae['pizza'] = 'La comida mas deliciosa del mundo'
+>>> rae
+{'pizza': 'La comida mas deliciosa del mundo'}
+>>> rae['pasta'] = 'La comida mas sabrosa de italia'
+>>> rae.keys()
+dict_keys(['pizza', 'pasta'])
+>>> rae.values()
+dict_values(['La comida mas deliciosa del mundo', 'La comida mas sabrosa de italia'])
+>>> rae.items()
+dict_items([('pizza', 'La comida mas deliciosa del mundo'), ('pasta', 'La comida mas sabrosa de italia')])
+>>> for key in rae.keys():
+...     print(key)
+...
+pizza
+pasta
+>>> for values in rae.values():
+...     print(values)
+...
+La comida mas deliciosa del mundo
+La comida mas sabrosa de italia
+>>> for keys,values in rae.items():
+...     print(keys, values)
+...
+pizza La comida mas deliciosa del mundo
+pasta La comida mas sabrosa de italia
+```
