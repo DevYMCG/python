@@ -751,3 +751,47 @@ Se inician con [] o con la built-in function list.
     - my_list[2] = 6
 - Los indices de las listas, funcionan igual que los de los string
 - Las listas se inician con [] o con la función list
+
+En las listas hay que tener cuidado al momento de igualar una lista con otra pues cuando se modifica pasa como esto:
+
+```python
+>>> country = ['Ecuador','Venezuela', 'Colombia', 'Argentina']
+>>> id(country)
+1867967259456
+>>> global_country = country
+>>> id(global_country)
+1867967259456
+>>> country[0] = 'Guatemala'
+>>> country
+['Guatemala', 'Venezuela', 'Colombia', 'Argentina']
+>>> global_country
+['Guatemala', 'Venezuela', 'Colombia', 'Argentina']
+```
+
+Si queremos hacer esto pero que no se modifique la lista lo podemos hacer como se muestra a continuación habria que importar el modulo copy.
+
+```python
+>>> import copy
+>>> countries = ['Guatemala', 'Venezuela', 'Colombia', 'Argentina']
+>>> global_countries = None
+>>> global_countries = copy.copy(countries)
+>>> countries
+['Guatemala', 'Venezuela', 'Colombia', 'Argentina']
+>>> countries[0] = 'Perú'
+>>> countries
+['Perú', 'Venezuela', 'Colombia', 'Argentina']
+>>> global_countries
+['Guatemala', 'Venezuela', 'Colombia', 'Argentina']
+```
+
+Recorrer una lista
+
+```python
+>>> for country in countries:
+...     print(country)
+...
+Perú
+Venezuela
+Colombia
+Argentina
+```
