@@ -795,3 +795,20 @@ Venezuela
 Colombia
 Argentina
 ```
+
+### Operaciones con listas
+
+Ahora que ya entiendes cómo funcionan las listas, podemos ver qué tipo de operaciones y métodos podemos utilizar para modificarlas, manipularlas y realizar diferentes tipos de cómputos con esta Estructura de Datos.
+
+- El operador +(suma) concatena dos o más listas.
+- El operador *(multiplicación) repite los elementos de la misma lista tantas veces los queramos multiplicar
+
+Sólo podemos utilizar +(suma) y *(multiplicación).
+
+Las listas tienen varios métodos que podemos utilizar.
+
+- append nos permite añadir elementos a listas. Cambia el tamaño de la lista.
+- pop nos permite sacar el último elemento de la lista. También recibe un índice y esto nos permite elegir qué elemento queremos eliminar.
+- sort modifica la propia lista y ordenarla de mayor a menor. Existe otro método llamado sorted, que también ordena la lista, pero genera una nueva instancia de la lista
+- del nos permite eliminar elementos vía indices, funciona con slices
+- remove nos permite es pasarle un valor para que Python compare internamente los valores y determina cuál de ellos hace match o son iguales para eliminarlos.
