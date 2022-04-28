@@ -801,14 +801,91 @@ Argentina
 Ahora que ya entiendes cómo funcionan las listas, podemos ver qué tipo de operaciones y métodos podemos utilizar para modificarlas, manipularlas y realizar diferentes tipos de cómputos con esta Estructura de Datos.
 
 - El operador +(suma) concatena dos o más listas.
+    - Ej.
+      - a = [1,2]
+      - b = [2,3]
+      - a + b = [1, 2, 2, 3]
+
 - El operador *(multiplicación) repite los elementos de la misma lista tantas veces los queramos multiplicar
+    - Ej.
+      - a = [1,2]
+      - a *2 = [1,2,1,2]
 
 Sólo podemos utilizar +(suma) y *(multiplicación).
 
-Las listas tienen varios métodos que podemos utilizar.
+**Las listas tienen varios métodos que podemos utilizar.**
 
-- append nos permite añadir elementos a listas. Cambia el tamaño de la lista.
-- pop nos permite sacar el último elemento de la lista. También recibe un índice y esto nos permite elegir qué elemento queremos eliminar.
-- sort modifica la propia lista y ordenarla de mayor a menor. Existe otro método llamado sorted, que también ordena la lista, pero genera una nueva instancia de la lista
-- del nos permite eliminar elementos vía indices, funciona con slices
-- remove nos permite es pasarle un valor para que Python compare internamente los valores y determina cuál de ellos hace match o son iguales para eliminarlos.
+- **append** nos permite añadir elementos a listas. Cambia el tamaño de la lista.
+    - Ej.
+        - a = [1]
+        - a.append(2) #[1,2]
+- **pop** nos permite sacar el último elemento de la lista. También recibe un índice y esto nos permite elegir qué elemento queremos eliminar.
+    - Ej.
+        - a = [1,2]
+        - b = a.pop()
+        - print(a) #1
+        - print(b) #2
+
+- **sort** modifica la propia lista y ordenarla de mayor a menor. Existe otro método llamado sorted, que también ordena la lista, pero genera una nueva instancia de la lista
+    - Ej.
+        - a = [3,8,1]
+        - a.sort() # [1,3,8]
+    
+- **del** nos permite eliminar elementos vía indices, funciona con slices
+    - Ej.
+        - a = [1,2,3]
+        - del a[-1]
+
+- **remove** nos permite es pasarle un valor para que Python compare internamente los valores y determina cuál de ellos hace match o son iguales para eliminarlos.
+
+```python
+>>> a = list(range(0,100,2))
+>>> b = list(range(0,10))
+>>> b
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> a
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98]
+>>> a + b
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> b
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> b * 2
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> fruits = list()          
+>>> fruits                   
+[]                           
+>>> fruits.append('apple')   
+>>> fruits                   
+['apple']                    
+>>> len(fruits)              
+1                            
+>>> fruits.append('banana')  
+>>> fruits                   
+['apple', 'banana']          
+>>> len(fruits)              
+2
+>>> some_fruit = fruits.pop()
+>>> some_fruit
+'banana'
+>>> fruits.append('banana')
+>>> fruits.append('kiwi')
+>>> some_fruit = fruits.pop(0)
+>>> some_fruit
+'apple'
+>>> del fruits[0]
+>>> fruits
+['kiwi'] 
+>>> import random
+>>>
+>>> random_numbers = []
+>>> for i in range(10):
+...     random_numbers.append(random.randint(0,15))
+...
+>>> random_numbers
+[14, 11, 9, 2, 3, 7, 2, 5, 15, 11]
+>>> ordered_numbers = sorted(random_numbers)
+>>> ordered_numbers
+[2, 2, 3, 5, 7, 9, 11, 11, 14, 15]
+>>> random_numbers
+[14, 11, 9, 2, 3, 7, 2, 5, 15, 11]                          
+```
