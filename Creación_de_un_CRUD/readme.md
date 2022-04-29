@@ -948,3 +948,107 @@ La comida mas sabrosa de italia
 pizza La comida mas deliciosa del mundo
 pasta La comida mas sabrosa de italia
 ```
+
+### Tuplas y conjuntos
+
+- Tuplas(tuples) son iguales a las listas, la única diferencia es que son inmutables, la diferencia con los strings es que pueden recibir muchos tipos valores. Son una serie de valores separados por comas, casi siempre se le agregan paréntesis para que sea mucho más legible.
+    - Ejm.
+        - Tup = 1,2,3
+        - tup = (1,2,3)
+
+- Para poderla inicializar utilizamos la función tuple.
+
+- Uno de sus usos muy comunes es cuando queremos regresar más de un valor en nuestra función.
+    - Ejm.
+        - return(students, teachers)
+
+Una de las características de las Estructuras de Datos es que cada una de ellas nos sirve para algo especifico. No existe en programación una navaja suiza que nos sirva para todos. Los mejores programas son aquellos que utilizan la herramienta correcta para el trabajo correcto.
+
+Conjutos(sets) nacen de la teoría de conjuntos. Son una de las Estructuras más importantes y se parecen a las listas, podemos añadir varios elementos al conjunto, pero no pueden existir elementos duplicados. A diferencia de los tuples podemos agregar y eliminar, son mutables.
+
+Los sets se pueden inicializar con la función set. Una recomendación es inicializarlos con esta función para no causar confusión con los diccionarios.
+
+add nos sirve añadir elementos.
+remove nos permite eliminar elementos
+
+```python
+>>> a = 1, 2, 3
+>>> type(a)
+<class 'tuple'>
+>>> a = (1, 2, 3)
+>>> type(a)
+<class 'tuple'>
+>>> a[1]
+2
+>>> a = (1, 1, 2, 3, 4)
+>>> dir(a)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+# Cuenta las veces que se encuentra un elemento.
+>>> a.count(2)
+1             
+>>> a.count(1)
+2     
+# Indica el indice donde se encuentra el elemento
+>>> a.index(1)
+0             
+>>> a.index(3)
+3
+>>> a = set([1, 2, 3])
+>>> a.add(5)
+>>> a
+{1, 2, 3, 5}                     
+```
+
+**Operadores para sets**
+
+```python
+>>> A = {1, 2, 3}	# conjunto A
+>>> B = {3, 4 ,5}	# conjunto B
+>>> A | B		#unión
+{1, 2, 3, 4, 5}
+>>> A & B	# intersección
+{3}
+>>> A - B		# diferencia entre A y B
+{1, 2}
+>>> B - A		# diferencia entre B y A
+{4, 5}
+```
+
+### Introducción al módulo collections
+
+El módulo collections nos brinda un conjunto de objetos primitivos que nos permiten extender el comportamiento de las built-in collections que poseé Python y nos otorga estructuras de datos adicionales. Por ejemplo, si queremos extender el comportamiento de un diccionario, podemos extender la clase UserDict; para el caso de una lista, extendemos UserList; y para el caso de strings, utilizamos UserString.
+
+Por ejemplo, si queremos tener el comportamiento de un diccionario podemos escribir el siguiente código:
+
+```python
+class SecretDict(collections.UserDict):
+
+   def _password_is_valid(self, password):
+        …
+
+    def _get_item(self, key):
+        … 
+
+    def __getitem__(self, key):
+         password, key = key.split(‘:’)
+         
+         if self._password_is_valid(password):
+              return self._get_item(key)
+         
+         return None
+
+my_secret_dict = SecretDict(...)
+my_secret_dict[‘some_password:some_key’] # si el password es válido, regresa el valor
+```
+Otra estructura de datos que vale la pena analizar, es namedtuple. Hasta ahora, has utilizado tuples que permiten acceder a sus valores a través de índices. Sin embargo, en ocasiones es importante poder nombrar elementos (en vez de utilizar posiciones) para acceder a valores y no queremos crear una clase ya que únicamente necesitamos un contenedor de valores y no comportamiento.
+
+```python
+Coffee = collections.NamedTuple(‘Coffee’, (‘size’, ‘bean’, ‘price’))
+def get_coffee(coffee_type):
+     If coffee_type == ‘houseblend’:
+         return Coffee(‘large’, ‘premium’, 10)
+```
+
+El módulo collections también nos ofrece otros primitivos que tienen la labor de facilitarnos la creación y manipulación de colecciones en Python. Por ejemplo, Counter nos permite contar de manera eficiente ocurrencias en cualquier iterable; OrderedDict nos permite crear diccionarios que poseen un orden explícito; deque nos permite crear filas (para pilas podemos utilizar la lista).
+
+En conclusión, el módulo collections es una gran fuente de utilerías que nos permiten escribir código más “pythonico” y más eficiente.
