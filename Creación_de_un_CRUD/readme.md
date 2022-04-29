@@ -1052,3 +1052,26 @@ def get_coffee(coffee_type):
 El módulo collections también nos ofrece otros primitivos que tienen la labor de facilitarnos la creación y manipulación de colecciones en Python. Por ejemplo, Counter nos permite contar de manera eficiente ocurrencias en cualquier iterable; OrderedDict nos permite crear diccionarios que poseen un orden explícito; deque nos permite crear filas (para pilas podemos utilizar la lista).
 
 En conclusión, el módulo collections es una gran fuente de utilerías que nos permiten escribir código más “pythonico” y más eficiente.
+
+### Python comprehensions
+
+Las Comprehensions son constructos que nos permiten generar una secuencia a partir de otra secuencia.
+
+Existen tres tipos de comprehensions:
+
+- List comprehensions
+
+```python
+[element for element in element_list if element_meets_condition]
+```
+- Dictionary comprehensions
+
+```python
+{key: element for element in element_list if element_meets_condition}
+```
+
+- Sets comprehensions
+
+```python
+{element for element in element_list if elements_meets_condition}
+```
