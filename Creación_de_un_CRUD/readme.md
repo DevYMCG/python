@@ -1133,3 +1133,11 @@ Búsqueda binaria lo único que hace es tratar de encontrar un resultado en una 
         - **csv.DictReader y csv.DictWritter** nos permiten manipular los valores a través de diccionarios que representan filas.
         - se pueden acceder a través de llaves a los valores.
 
+### Decoradores
+
+Python es un lenguaje que acepta diversos paradigmas como programación orientada a objetos y la programación funcional, siendo estos los temas de nuestro siguiente módulo.
+
+Los decoradores son una función que envuelve a otra función para modificar o extender su comportamiento.
+
+En Python las funciones son ciudadanos de primera clase, first class citizen, esto significan que las funciones pueden recibir funciones como parámetros y pueden regresar funciones. Los decoradores utilizan este concepto de manera fundamental.
+
