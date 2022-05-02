@@ -1141,3 +1141,48 @@ Los decoradores son una función que envuelve a otra función para modificar o e
 
 En Python las funciones son ciudadanos de primera clase, first class citizen, esto significan que las funciones pueden recibir funciones como parámetros y pueden regresar funciones. Los decoradores utilizan este concepto de manera fundamental.
 
+### ¿Qué es la programación orientada a objetos?
+
+La programación orientada a objetos es un paradigma de programación que otorga los medios para estructurar programas de tal manera que las propiedades y comportamientos estén envueltos en objetos individuales.
+
+Para poder entender cómo modelar estos objetos tenemos que tener claros cuatro principios:
+
+Encapsulamiento.
+Abstracción
+Herencia
+Polimorfismo
+Las clases simplemente nos sirven como un molde para poder generar diferentes instancias.
+
+definición
+
+Clases: Una Clase es el modelo por el cual nuestros objetos se van a construir y nos van a permitir generar más objetos.
+
+Propiedades: Las Propiedades también pueden llamarse atributos y estos también serán sustantivos. Algunos atributos o propiedades son nombre, tamaño, forma, estado, etc. Son todas las características del objeto.
+
+Métodos: Los Comportamientos serán todas las operaciones que el objeto puede hacer, suelen ser verbos o sustantivos y verbo. Algunos ejemplos pueden ser que el usuario pueda hacer login y logout.
+
+Objetos: son aquellos que tienen propiedades (atributos) y comportamientos (operaciones que el objeto puede hacer), también serán sustantivos. Pueden ser Físicos o Conceptuales
+.
+Para poder entender cómo modelar estos objetos tenemos que tener claros cuatro principios:
+
+Encapsulation: es hacer que un dato sea inviolable, inalterable cuando se le asigne un modificador de acceso.
+
+Cada objeto tiene sus propias funciones y datos sin afectar a otros, son lógica interna.
+
+Abstraction: es cuando separamos los datos de un objeto para generar un molde. El usuario podrá interactuar con el objeto sin necesidad de conocer toda la lógica del mismo.
+
+En el caso de POO una Clase es el modelo por el cual nuestros objetos se van a construir y nos van a permitir generar más objetos.
+
+Inheritance: La herencia nos permite crear nuevas clases a partir de otras, se basa en modelos y conceptos de la vida real. También tenemos una jerarquía de padre e hijo.
+
+Si se declara un método en una clase todas las subclases heredan ese método, es decir: si tu declaras un método “imprimir” que ejecute un print en una clase, las subclases podrán usar el método imprimir, sin necesidad de declararlo en cada una.
+
+Polymorphism: Es construir métodos con el mismo nombre pero con comportamiento diferente.
+
+### OOP PYTHON
+
+Para declarar una **clase** en Python utilizamos la keyword class, después de eso le damos el nombre. Una convención en Python es que todas las clases empiecen con mayúscula y se continua con CamelCase.
+
+Un método fundamental es dunder init(__init__). Lo único que hace es inicializar la clase basado en los parámetros que le damos al momento de construir la clase.
+
+self es una referencia a la clase. Es una forma internamente para que podamos acceder a las propiedades y métodos.
