@@ -1113,4 +1113,12 @@ Búsqueda binaria lo único que hace es tratar de encontrar un resultado en una 
 
 - La función **open** nos permite leer archivos
     - f = open('some_file')
-- Es importante siempre cerrar el archivo con la función 
+- Es importante siempre cerrar el archivo con la función close para que se escriban los datos y no se desperdicie memoria.
+    - f-close()
+- Una mejor manera de manipular archivos es utilizando **context managers**, porque garantizan que el archivo se cierre
+    - Ejm.
+    - with open(filename) as f:
+        "# do something with the file"
+- Existen varios modos de abrir un archivo. Los más importantes son r (read) y w (write)
+    - with open(filename, mode = 'w') as f:
+        "# do something with the file"
