@@ -1122,3 +1122,14 @@ Búsqueda binaria lo único que hace es tratar de encontrar un resultado en una 
 - Existen varios modos de abrir un archivo. Los más importantes son r (read) y w (write)
     - with open(filename, mode = 'w') as f:
         "# do something with the file"
+- El módulo **csv** nos permite manipular archivos con terminación .csv
+    - csv significa comma separated values
+    - Es un formato para almacenar datos tabulares
+- Para utilizarlo lo importamos con la siguiente declaración:
+**import csv**
+- Existen dos readers y dos writers
+    - **csv.reader** y **csv.writer** nos permiten manipular los valores a través de listas que representan filas
+        - solo se pueden acceder por índice a los valores
+        - **csv.DictReader y csv.DictWritter** nos permiten manipular los valores a través de diccionarios que representan filas.
+        - se pueden acceder a través de llaves a los valores.
+
