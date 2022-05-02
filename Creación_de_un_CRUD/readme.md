@@ -1108,3 +1108,9 @@ students_with_uid = {uid : student for uid, student in zip(student_uid, students
 Uno de los conceptos más importantes que debes entender en tu carrera dentro de la programación son los algoritmos. No son más que una secuencia de instrucciones para resolver un problema específico.
 
 Búsqueda binaria lo único que hace es tratar de encontrar un resultado en una lista ordenada de tal manera que podamos razonar. Si tenemos un elemento mayor que otro, podemos simplemente usar la mitad de la lista cada vez
+
+### Manipulación de archivos.
+
+- La función **open** nos permite leer archivos
+    - f = open('some_file')
+- Es importante siempre cerrar el archivo con la función 
