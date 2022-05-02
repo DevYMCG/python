@@ -1186,3 +1186,19 @@ Para declarar una **clase** en Python utilizamos la keyword class, después de e
 Un método fundamental es dunder init(__init__). Lo único que hace es inicializar la clase basado en los parámetros que le damos al momento de construir la clase.
 
 self es una referencia a la clase. Es una forma internamente para que podamos acceder a las propiedades y métodos.
+
+```python
+class Airplane:
+
+    def __init__(self, passengers, seats, pilots=[]):
+        self.passengers = passengers
+        self.seats = seats
+        self._pilots = pilots
+
+    def takeoff(self):
+        pass
+
+    airplane = Airplane(passengers=20, seats=30, pilots=['tom', 'Billy'])
+    airplane.passengers = 31
+    airplane.takeoff()
+````
