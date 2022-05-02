@@ -1147,10 +1147,11 @@ La programación orientada a objetos es un paradigma de programación que otorga
 
 Para poder entender cómo modelar estos objetos tenemos que tener claros cuatro principios:
 
-Encapsulamiento.
-Abstracción
-Herencia
-Polimorfismo
+- Encapsulamiento.
+- Abstracción
+- Herencia
+- Polimorfismo
+
 Las clases simplemente nos sirven como un molde para poder generar diferentes instancias.
 
 definición
@@ -1186,6 +1187,8 @@ Para declarar una **clase** en Python utilizamos la keyword class, después de e
 Un método fundamental es dunder init(__init__). Lo único que hace es inicializar la clase basado en los parámetros que le damos al momento de construir la clase.
 
 self es una referencia a la clase. Es una forma internamente para que podamos acceder a las propiedades y métodos.
+
+Nota el keyword **self** referencia a esta clase donde podemos acceder a los metodos y variables.
 
 ```python
 class Airplane:
