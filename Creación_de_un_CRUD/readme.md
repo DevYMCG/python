@@ -1271,3 +1271,14 @@ def some_function():
      
      Some_var_in_other_scope += 1
 ```
+
+### Introducción a Click
+
+Click es un pequeño framework que nos permite crear aplicaciones de Línea de comandos. Tiene cuatro decoradores básicos:
+
+- @click_group: Agrupa una serie de comandos
+- @click_command: Aca definiremos todos los comandos de nuestra apliacion
+- @click_argument: Son parámetros necesarios
+- @click_option: Son parámetros opcionales
+
+Click también realiza las conversiones de tipo por nosotros. Esta basado muy fuerte en decoradores.
