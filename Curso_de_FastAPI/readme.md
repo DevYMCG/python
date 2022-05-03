@@ -215,6 +215,8 @@ class Item(Base):
 
 ### Validaciones: Query Parameters
 
+Nota: La persona no nos puede enviar algo que tengo menos de un caracter y mas de 50 caracteres
+
 ```python
 #Python
 from typing import Optional
@@ -232,3 +234,20 @@ def show_person(
 ): 
     return {name: age}
 ```
+
+### Validaciones: explorando más parameters
+
+**validar string**
+- max-length: Define cantidad maxima de caracteres
+- min-length: Define cantidad minima de caracteres
+- regex: expresiones regulares
+
+**validar numeros**
+- ge (Greater or equal than): permite indicar y saber si este numero es mayor o igual a otro numero >= 
+- le (less or equal then): permite saber si un numero es mayor o igual a cero <=
+- gt (Greater than): mayor a que la edad sea mayor a 20 >
+- lt (less): menor a <
+
+**Paramentros para documentar mejor nuestra documentación**
+- title: Colocar titulo
+- description: colocar descripción
