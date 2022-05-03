@@ -14,3 +14,45 @@ FastAPI utiliza otros frameworks dentro de si para funcionar
 
 ## Hello World: creación del entorno de desarrollo
 
+### crear entorno virtual
+
+```
+$ py -m venv venv
+```
+
+### Activar entorno virtual
+
+```
+λ .\venv\Scripts\activate
+```
+
+### Instalar fastAPI
+
+```
+λ pip install fastapi uvicorn
+```
+
+### creando nuestra primer path
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+# path de la ruta
+@app.get("/")
+def home():
+    return {"Hello": "world"}
+```
+
+#### Para correr nuestro función.
+
+(venv) λ uvicorn main:app --reload
+
+Al ejecutar el comando nos va a aparecer el servidor corriendo como en la imagen adjunta.
+
+![src/correr_app.PNG](src/correr_app.PNG)
+
+Nos dirigimos al servidor y a continuación observamos la API
+
+![src/api_main.PNG](src/api_main.PNG)
