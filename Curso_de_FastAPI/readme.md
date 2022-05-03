@@ -53,6 +53,30 @@ Al ejecutar el comando nos va a aparecer el servidor corriendo como en la imagen
 
 ![src/correr_app.PNG](src/correr_app.PNG)
 
-Nos dirigimos al servidor y a continuación observamos la API
+Nos dirigimos al servidor y a continuación observamos lo que nos retorna la ruta que estamos consultando.
 
 ![src/api_main.PNG](src/api_main.PNG)
+
+#### Documentación interactiva de una API
+
+FastAPI también está parado sobre los hombros de OpenAPI, el cual es un conjunto de reglas que permite definir cómo describir, crear y visualizar APIs. Es un conjunto de reglas que permiten decir que una API está bien definida.
+ㅤ
+OpenAPI necesita de un software, el cual es **Swagger**, que es un conjunto de softwares que permiten trabajar con APIs. FastAPI funciona sobre un programa de Swagger el cual es Swagger UI, que permite mostrar la API documentada.
+ㅤ
+Acceder a la documentación interactiva con Swagger UI:
+
+```
+{localhost}/docs
+http://127.0.0.1:8000/docs
+```
+
+![src/docs.PNG](src/docs.PNG)
+
+Acceder a la documentación interactiva con Redoc:
+
+```
+{localhost}/redoc
+http://127.0.0.1:8000/redoc
+```
+
+![src/redoc.PNG](src/redoc.PNG)
