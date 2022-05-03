@@ -254,3 +254,21 @@ def show_person(
 
 ### Validaciones: Path Parameters
 
+```python
+#Pydantic
+from pydantic import BaseModel
+
+#FastAPI
+from fastapi import FastAPI
+from fastapi import Path
+
+app = FastAPI()
+
+# Validaciones: Path Parameters
+
+@app.get("/person/detail/{person_id}")
+def show_person(
+    person_id: int = Path(..., gt=0)
+): 
+    return {person_id: "It exists!"}
+```
