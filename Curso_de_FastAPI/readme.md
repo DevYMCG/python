@@ -80,3 +80,17 @@ http://127.0.0.1:8000/redoc
 ```
 
 ![src/redoc.PNG](src/redoc.PNG)
+
+### Path Operations
+
+¿Cómo funcionan las PATH OPERATION?
+
+![src/path_operation.PNG](src/path_operation.PNG)
+
+¿Que es un path?
+Un path es lo mismo que un route o endpoints y es todo aquello que vaya después de nuestro dominio a la derecha del mismo.
+
+¿Que son las operations?
+Un operations es exactamente lo mismo que un método http y tenemos las siguientes más populares: GET, POST, PUT y DELETE
+
+Y otros métodos como OPTIONS, HEAD, PATCH …
