@@ -251,3 +251,6 @@ def show_person(
 **Paramentros para documentar mejor nuestra documentación**
 - title: Colocar titulo
 - description: colocar descripción
+
+### Validaciones: Path Parameters
+
