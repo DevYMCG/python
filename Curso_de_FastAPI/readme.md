@@ -114,3 +114,14 @@ async def read_item(item_id):
 
 ![src/path_parameters.PNG](src/path_parameters.PNG)
 
+### Query Parameters
+
+https://fastapi.tiangolo.com/tutorial/query-params/
+
+Query parameters: son un conjunto definido de parámetros adjuntos al final de una URL . Son extensiones de la URL que se utilizan para ayudar a definir contenido o acciones específicos en función de los datos que se transmiten.
+
+![src/parameters_opcionales.PNG](src/parameters_opcionales.PNG)
+
+### Request Body y Response Body
+
+![src/request_body.PNG](src/request_body.PNG)
