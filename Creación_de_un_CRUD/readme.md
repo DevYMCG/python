@@ -1348,3 +1348,26 @@ with custom_open('file') as f:
 ```
 
 El código anterior funciona exactamente igual que cuando lo escribimos con una clase. La diferencia es que el código se ejecuta al inicializarse el contexto y retorna el control cuando el keyword yield regresa un valor. Una vez que termina el bloque with, el context manager toma de nueva cuenta el control y ejecuta el código de limpieza.
+
+### Aplicaciones de Python en el mundo real
+
+Python tiene muchas aplicaciones:
+
+En las ciencias tiene muchas librerías que puedes utilizar como analisis de las estrellas y astrofisica; si te interesa la medicina puedes utilizar Tomopy para analizar tomografías. También están las librerías más fuertes para la ciencia de datos numpy, Pandas y Matplotlib
+
+En CLI por si te gusta trabajar en la nube y con datacenters, para sincronizar miles de computadoras:
+
+- aws
+- gcloud
+- rebound
+- geeknote
+
+Aplicaciones Web:
+
+- Django
+- Flask
+- Bottle
+- Chalice
+- Webapp2
+- Gunicorn
+- Tornado
