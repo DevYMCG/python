@@ -94,3 +94,23 @@ Un path es lo mismo que un route o endpoints y es todo aquello que vaya después
 Un operations es exactamente lo mismo que un método http y tenemos las siguientes más populares: GET, POST, PUT y DELETE
 
 Y otros métodos como OPTIONS, HEAD, PATCH …
+
+### Path Parameters
+
+https://fastapi.tiangolo.com/tutorial/path-params/
+
+Los parámetros de ruta son partes variables de una ruta URL . Por lo general, se utilizan para señalar un recurso específico dentro de una colección, como un usuario identificado por ID. Una URL puede tener varios parámetros de ruta.
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/items/{item_id}")
+async def read_item(item_id):
+    return {"item_id": item_id}
+```
+
+![src/path_parameters.PNG](src/path_parameters.PNG)
+
