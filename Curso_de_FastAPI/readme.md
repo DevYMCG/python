@@ -272,3 +272,11 @@ def show_person(
 ): 
     return {person_id: "It exists!"}
 ```
+
+### Tipos de datos especiales
+
+![src/tipos_de_datos.PNG](src/tipos_de_datos.PNG)
+
+**Documentación de validaciones**
+
+> https://pydantic-docs.helpmanual.io/usage/types/#pydantic-types
