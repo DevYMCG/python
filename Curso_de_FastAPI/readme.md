@@ -401,3 +401,21 @@ Los status code o codigos de estado son respuestas http los cuales indican el el
 - Errores de los servidores (500-599)
 
 ![src/status_code.PNG](src/status_code.PNG)
+
+```python
+from fastapi import status
+
+@app.get(
+    path="/person/detail/{person_id}",
+    status_code=status.HTTP_200_OK
+    )
+def show_person(
+    person_id: int = Path(
+        ..., 
+        gt=0,
+        example=123,
+        title="Person Id",
+        description="This is the person identifier. It´s required")
+):
+    return {person_id: "It exists!"}
+```
