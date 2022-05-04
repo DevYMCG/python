@@ -1,15 +1,18 @@
 #Python
 from lib2to3.pytree import Base
-from typing import Optional
+from typing import List, Optional
 from enum import Enum
 
 #Pydantic
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 from pydantic import Field
 
 #FastAPI
 from fastapi import FastAPI, Query
 from fastapi import Body, Query, Path
+
+# email - validators
+from email_validator import validate_email, EmailNotValidError
 
 app = FastAPI()
 
@@ -22,9 +25,21 @@ class HairColor(Enum):
     red = "red"
 
 class Location(BaseModel):
-    city: str
-    state: str
-    country: str
+    city: str = Field(
+        ..., 
+        min_length=1,
+        max_length=30
+        )
+    state: str= Field(
+        ..., 
+        min_length=1,
+        max_length=30
+        )
+    country: str = Field(
+        ..., 
+        min_length=1,
+        max_length=30
+        )
 
 class Person(BaseModel):
     first_name: str = Field(
@@ -42,6 +57,9 @@ class Person(BaseModel):
         gt=0,
         le=115
     )
+    email: EmailStr = Field(
+        ...
+        ) 
     hair_color: Optional[HairColor] = Field(default=None)
     is_married: Optional[bool] = Field(default=None)
 
