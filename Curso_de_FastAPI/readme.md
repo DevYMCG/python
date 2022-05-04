@@ -389,3 +389,15 @@ class Person(PersonBase):
 class PersonOut(PersonBase):
     pass
 ```
+
+### Status Code personalizados
+
+Los status code o codigos de estado son respuestas http los cuales indican el el estado de finalizacion de una solicitud especifica:
+
+- Respuestas informativas (100-199)
+- Respuestas Satisfactorias (200-299)
+- Redirecciones (300-399)
+- Errores de los clientes (400-499)
+- Errores de los servidores (500-599)
+
+![src/status_code.PNG](src/status_code.PNG)
