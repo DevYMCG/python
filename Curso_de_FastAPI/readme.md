@@ -419,3 +419,18 @@ def show_person(
 ):
     return {person_id: "It exists!"}
 ```
+
+### Formularios
+
+Para trabajar con formularios necesitamos de una libreria 
+
+```
+pip install python-multipart
+
+```
+
+### Cookie y Header Parameters
+
+**Header:** es una parte de una respuesta o petición HTTP
+**cookie:** Pieza de codigo que un servidor mete en tu computadora cuando estamos navegando en la web.
+
