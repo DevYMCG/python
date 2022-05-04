@@ -280,3 +280,69 @@ def show_person(
 **Documentación de validaciones**
 
 > https://pydantic-docs.helpmanual.io/usage/types/#pydantic-types
+
+### Response Model
+
+Es un atributo de nuestra Path Operation particularmente este atributo se coloca dentro de nuestra Path Operation Decoration
+
+```python
+@app.post("/person/new", response_model=PersonOut)
+def create_person(person : Person = Body(...)):
+    return person
+```
+
+Nota: Recibimos los datos del modelo de Person donde recibimos la contraseña pero al momento de enviar
+retornamos los datos que estan en PersonOut
+
+```python
+class Person(BaseModel):
+
+    first_name: str = Field(
+        ..., 
+        min_length=1,
+        max_length=50
+        )
+    last_name: str = Field(
+        ..., 
+        min_length=1,
+        max_length=50
+        )
+    age: int = Field(
+        ...,
+        gt=0,
+        le=115
+    )
+    email: EmailStr = Field(
+        ...
+        ) 
+    hair_color: Optional[HairColor] = Field(default=None)
+    is_married: Optional[bool] = Field(default=None)
+    password: str = Field(..., min_length=8)
+```
+
+**Datos que se retornan** donde solo retornamos lo datos a enviar
+
+```python
+class PersonOut(BaseModel):
+    
+    first_name: str = Field(
+        ..., 
+        min_length=1,
+        max_length=50
+        )
+    last_name: str = Field(
+        ..., 
+        min_length=1,
+        max_length=50
+        )
+    age: int = Field(
+        ...,
+        gt=0,
+        le=115
+    )
+    email: EmailStr = Field(
+        ...
+        ) 
+    hair_color: Optional[HairColor] = Field(default=None)
+    is_married: Optional[bool] = Field(default=None)
+```
