@@ -434,3 +434,29 @@ pip install python-multipart
 **Header:** es una parte de una respuesta o petición HTTP
 **cookie:** Pieza de codigo que un servidor mete en tu computadora cuando estamos navegando en la web.
 
+```python
+@app.post(
+    path="/contact",
+    status_code=status.HTTP_200_OK
+)
+def contact(
+    first_name: str = Form(
+        ...,
+        max_length=20,
+        min_length=1
+    ),
+    last_name: str = Form(
+        ...,
+        max_length=20,
+        min_length=1
+    ),
+    email: EmailStr = Form(...),
+    message: str = Form(
+        ...,
+        min_length=20
+    ),
+    user_agent: Optional[str] = Header(default=None),
+    ads: Optional[str] = Cookie(default=None)
+):
+    return user_agents
+```
