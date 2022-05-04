@@ -346,3 +346,46 @@ class PersonOut(BaseModel):
     hair_color: Optional[HairColor] = Field(default=None)
     is_married: Optional[bool] = Field(default=None)
 ```
+
+### Mejorando la calidad del código: eliminando líneas duplicadas
+
+Como podemos ver tenemos dos modelos exactamente igual salvo por una linea de código para esto y conociendo
+haciendo mejores prácticas vamos a aplicar herencia.
+
+**creamos una clase llamada PersonBase**
+
+```python
+class PersonBase(BaseModel):
+    first_name: str = Field(
+        ..., 
+        min_length=1,
+        max_length=50
+        )
+    last_name: str = Field(
+        ..., 
+        min_length=1,
+        max_length=50
+        )
+    age: int = Field(
+        ...,
+        gt=0,
+        le=115
+    )
+    email: EmailStr = Field(
+        ...
+        ) 
+    hair_color: Optional[HairColor] = Field(default=None)
+    is_married: Optional[bool] = Field(default=None)
+```
+
+**Person y PersonOut van a heredar de PersonBase**
+
+```python
+class Person(PersonBase):
+    password: str = Field(..., min_length=8)
+```
+
+```python
+class PersonOut(PersonBase):
+    pass
+```
