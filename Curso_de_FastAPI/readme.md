@@ -460,3 +460,9 @@ def contact(
 ):
     return user_agents
 ```
+
+### Archivos
+
+    Imaginemos que queremos subir un video, esto se hace mediante archivos.
+
+![src/tipos_de_entrada_datos.PNG](src/tipos_de_entrada_datos.PNG)
