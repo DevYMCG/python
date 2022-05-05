@@ -506,3 +506,27 @@ def show_person(
 
     return {person_id: "It exists!"}
 ```
+
+### Comenzando a ordenar nuestra documentación: etiquetas
+
+Es suprepamente importante mantener el orden de nuestras Http routes
+
+![src/orden.PNG](src/orden.PNG)
+
+Las podemos clasificar por una funcionalidad en particular y esto se realiza a traves de tags:
+
+![src/etiquetas.PNG](src/etiquetas.PNG)
+
+Los tags nos permite mantener cierto orden en nuestra documentación esto gracias a las etiquetas **tags**
+
+```python
+# Request and Response Body
+@app.post(
+    path="/person/new", 
+    response_model=PersonOut,
+    status_code=status.HTTP_201_CREATED,
+    tags=["Persons"]
+    )
+def create_person(person : Person = Body(...)):
+    return person
+```
