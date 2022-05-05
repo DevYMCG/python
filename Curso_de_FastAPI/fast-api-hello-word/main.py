@@ -1,11 +1,9 @@
 #Python
-from email import message
-from lib2to3.pytree import Base
-from typing import List, Optional
+from typing import Optional
 from enum import Enum
 
 #Pydantic
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 from pydantic import Field
 from pydantic import EmailStr
 from email_validator import validate_email, EmailNotValidError
@@ -13,6 +11,7 @@ from email_validator import validate_email, EmailNotValidError
 #FastAPI
 from fastapi import FastAPI, Header, Query, UploadFile
 from fastapi import status
+from fastapi import HTTPException
 from fastapi import Body, Query, Path, Form, Header, Cookie, UploadFile, File
 
 
@@ -123,6 +122,8 @@ def show_person(
 
 # Validaciones: Path Parameters
 
+persons = [1,2,3,4,5]
+
 @app.get(
     path="/person/detail/{person_id}",
     status_code=status.HTTP_200_OK
@@ -135,6 +136,12 @@ def show_person(
         title="Person Id",
         description="This is the person identifier. It´s required")
 ):
+    if person_id not in persons:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="¡This person doesn´t exist!"
+        )
+
     return {person_id: "It exists!"}
 
 # Validaciones: Request Body

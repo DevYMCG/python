@@ -485,3 +485,24 @@ def post_image(
 
 ### HTTPException
 
+```python
+@app.get(
+    path="/person/detail/{person_id}",
+    status_code=status.HTTP_200_OK
+    )
+def show_person(
+    person_id: int = Path(
+        ..., 
+        gt=0,
+        example=123,
+        title="Person Id",
+        description="This is the person identifier. It´s required")
+):
+    if person_id not in persons:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="¡This person doesn´t exist!"
+        )
+
+    return {person_id: "It exists!"}
+```
