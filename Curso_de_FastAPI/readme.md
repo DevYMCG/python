@@ -517,7 +517,7 @@ Las podemos clasificar por una funcionalidad en particular y esto se realiza a t
 
 ![src/etiquetas.PNG](src/etiquetas.PNG)
 
-Los tags nos permite mantener cierto orden en nuestra documentación esto gracias a las etiquetas **tags**
+Los tags nos permite mantener cierto orden en nuestra documentación.
 
 ```python
 # Request and Response Body
@@ -530,3 +530,39 @@ Los tags nos permite mantener cierto orden en nuestra documentación esto gracia
 def create_person(person : Person = Body(...)):
     return person
 ```
+
+### Nombre y descripción de una path operation
+
+Los aspectos para hacer el **docstring** de las path operations:
+
+- Título
+- Descripción
+- Parámetros
+- Resultado
+
+```python
+@app.post(
+    path="/person/new", 
+    response_model=PersonOut,
+    status_code=status.HTTP_201_CREATED,
+    tags=["Persons"],
+    summary="Create Person in the app"
+    )
+def create_person(person : Person = Body(...)):
+    """
+    Create Person
+    
+    This path operation creates a person in the app and save the informmation in the database
+
+    Parameters:
+    - Request body parameters:
+        - **person: Person** -> A person model with first name, last name, age, hair, color and marital status
+
+    Returns a person model with first name, last name, age, hair, color and marital status
+    """
+    return person
+```
+
+La documentación de nuestro código es muy importante ya que ayuda a entender con mayor facilidad las operaciones que se realizaran en este proceso 
+
+![src/visualiza.PNG](src/visualiza.PNG)

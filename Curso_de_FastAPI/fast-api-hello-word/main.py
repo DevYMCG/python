@@ -93,9 +93,21 @@ def home(): #path operation function
     path="/person/new", 
     response_model=PersonOut,
     status_code=status.HTTP_201_CREATED,
-    tags=["Persons"]
+    tags=["Persons"],
+    summary="Create Person in the app"
     )
 def create_person(person : Person = Body(...)):
+    """
+    Create Person
+    
+    This path operation creates a person in the app and save the informmation in the database
+
+    Parameters:
+    - Request body parameters:
+        - **person: Person** -> A person model with first name, last name, age, hair, color and marital status
+
+    Returns a person model with first name, last name, age, hair, color and marital status
+    """
     return person
 
 # Validaciones : Query parameters
@@ -121,6 +133,18 @@ def show_person(
         example=25
         ) 
 ):
+    """
+    Show Person
+    
+   This route operation returns the name and age of a person in the application
+
+    Parameters:
+    - Request body parameters:
+        - **name:** -> name of person
+        - **age:** -> edad of person
+
+    Returns the name and age of a person
+    """
     return {name: age}
 
 # Validaciones: Path Parameters
@@ -140,6 +164,17 @@ def show_person(
         title="Person Id",
         description="This is the person identifier. It´s required")
 ):
+    """
+    Show Person ID
+    
+    This route operation returns an identifier and tells us if it is in the application
+
+    Parameters:
+    - Request body parameters:
+        - **person_id** -> person identifier
+
+    Returns the identifier and a validation message.
+    """
     if person_id not in persons:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -166,6 +201,19 @@ def update_person(
     person : Person = Body(...),
     location: Location = Body(...)
 ):
+    """
+    Update Person
+    
+   This route operation returns an identifier and tells us if the identifier is found in the application
+
+    Parameters:
+    - Request body parameters:
+        - **person_id:** -> "This is the person ID"
+        - **person: Person** -> "A person model with first name, last name, age, hair, color and marital status"
+        - **location: Location** -> "A person Location with city, state and country"
+
+    Returns a model with first name, last name, age, hair, color, marital status, city, state and country
+    """
     results = person.dict()
     results.update(location.dict())
     return results
@@ -177,6 +225,18 @@ def update_person(
     tags=["Persons"]
 )
 def login(username: str = Form(...), password: str = Form(...)):
+    """
+    Login
+    
+    This route operation authenticates a user to the system
+
+    Parameters:
+    - Request body parameters:
+        - **username:** -> authentication user
+        - **password:** -> Authentication key
+
+    Returns el username y password 
+    """
     return LoginOut(username=username)
 
 # Cookies and Headers Parameters
@@ -205,6 +265,22 @@ def contact(
     user_agent: Optional[str] = Header(default=None),
     ads: Optional[str] = Cookie(default=None)
 ):
+    """
+    Contact
+    
+    This route operation authenticates a user to the system
+
+    Parameters:
+    - Request body parameters:
+        - **first_name:** -> first_name of person
+        - **last_name:** -> last_name of person
+        - **email:** -> email of person
+        - **message:** -> message of person
+        - **user_agent:** -> user_agent of person
+        - **ads:** -> ads of person
+
+   Returns customer information
+    """
     return user_agent
 
 # Files
@@ -216,6 +292,17 @@ def contact(
 def post_image(
     image: UploadFile = File(...)
 ):
+    """
+    Post Image
+    
+    This path operation displays information from the attached file.
+
+    Parameters:
+    - Request body parameters:
+        - **image:** -> image .jpg or png to attach
+
+    Returns Filename, Format and Size of the file
+    """
     return {
         "Filename": image.filename,
         "Format": image.content_type,
