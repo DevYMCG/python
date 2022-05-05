@@ -463,6 +463,25 @@ def contact(
 
 ### Archivos
 
-    Imaginemos que queremos subir un video, esto se hace mediante archivos.
+Imaginemos que queremos subir un video, esto se hace mediante archivos.
 
 ![src/tipos_de_entrada_datos.PNG](src/tipos_de_entrada_datos.PNG)
+
+```python
+# Files
+
+@app.post(
+    path="/post-image"
+)
+def post_image(
+    image: UploadFile = File(...)
+):
+    return {
+        "Filename": image.filename,
+        "Format": image.content_type,
+        "Size(kb)": round(len(image.file.read())/1024, ndigits=2)
+    }
+```
+
+### HTTPException
+
