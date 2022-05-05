@@ -566,3 +566,40 @@ def create_person(person : Person = Body(...)):
 La documentación de nuestro código es muy importante ya que ayuda a entender con mayor facilidad las operaciones que se realizaran en este proceso 
 
 ![src/visualiza.PNG](src/visualiza.PNG)
+
+### Deprecar una path operation
+
+Deprecar una pieza de código sucede cuando:
+
+- Se encuentra un mejor método mas eficiente para resolver un problema que nosotros ya tenemos. Lo que hacemos no es eliminar dicho método si no la dejamos sin efecto. Para aprovechar el código posteriormente si lo requerimos nuevamente.
+- Una funcionalidad diferente de nuestro código a la que ya tenemos definidos.
+- Cuando se esta realizando una refactorización profunda del código, debido a que no tiene las mejores practicas, se define  deprecar las path operation que se tienen por otras nuevas y se reemplazan. Nota: Siempre es mejor mantener el código que modificarlo desde cero.
+
+```python
+@app.get(
+    path="/person/detail",
+    status_code=status.HTTP_200_OK,
+    tags=["Persons"],
+    deprecated=True
+    )
+def show_person(
+    name: Optional[str] = Query(
+        None, 
+        min_length=1,
+        max_length=50,
+        title="Person Name",
+        description="This is the person name. It´s between a and 50 characters",
+        example="Rocio"
+        ), 
+    age: str = Query(
+        ...,
+        title="Person Age",
+        description="This is the person age. It´s required",
+        example=25
+        ) 
+):
+```
+
+### Proyecto Twitter
+
+![src/proyecto_twiteer.PNG](src/proyecto_twiteer.PNG)
