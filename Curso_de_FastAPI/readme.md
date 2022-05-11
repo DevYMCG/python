@@ -603,3 +603,54 @@ def show_person(
 ### Proyecto Twitter
 
 ![src/proyecto_twiteer.PNG](src/proyecto_twiteer.PNG)
+
+### Modelos: User
+
+Nota 
+
+UUID: es una clase especial de python que nos permite colocar un identificador unico a los usuarios.
+
+Para usarlo importamos la clase:
+
+```python
+from uuid import UUID
+```
+
+Field: son campos que nos permiten validar con el Fiel(...) validamos la obligatoriedad del campo
+
+```python
+user_id: UUID = Field(...)
+```
+
+```python
+# Models
+class UserBase(BaseModel):
+    user_id: UUID = Field(...)
+    email: EmailStr = Field(...)
+
+
+class UserLogin(UserBase):
+    password: str = Field(
+        ...,
+        min_length=8
+    )
+
+
+class User(UserBase):
+    first_name: str = Field(
+        ...,
+        min_length=1,
+        max_length=50
+    )
+    last_name: str = Field(
+        ...,
+        min_length=1,
+        max_length=50
+    )
+    birth_date: Optional[date] = Field(default=None)
+
+class Tweet(BaseModel):
+    pass
+```
+
+### Modelos: Tweet
