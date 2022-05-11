@@ -734,3 +734,60 @@ def update_a_user():
 ```
 
 ### Esqueleto de las Path Operations: Tweets
+
+```python
+### Show all tweets
+@app.get(
+    path="/",
+    response_model= List[Tweet],
+    status_code=status.HTTP_200_OK,
+    summary="Show all tweets",
+    tags=["Tweets"]   
+)
+def show_all_tweets():
+    pass
+
+### Post a tweet
+@app.post(
+    path="/post",
+    response_model= Tweet,
+    status_code=status.HTTP_201_CREATED,
+    summary="Post a tweet",
+    tags=["Tweets"]   
+)
+def post():
+    pass
+
+### Show a tweet
+@app.get(
+    path="/tweets/{tweet_id}",
+    response_model= Tweet,
+    status_code=status.HTTP_200_OK,
+    summary="Show a specific tweet",
+    tags=["Tweets"]   
+)
+def show_a_tweet():
+    pass
+
+### Delete a tweet
+@app.delete(
+    path="/tweets/{tweet_id}/delete",
+    response_model= Tweet,
+    status_code=status.HTTP_200_OK,
+    summary="delete a specific tweet",
+    tags=["Tweets"]   
+)
+def delete_a_tweet():
+    pass
+
+### update a tweet
+@app.put(
+    path="/tweets/{tweet_id}/update",
+    response_model= Tweet,
+    status_code=status.HTTP_200_OK,
+    summary="update a specific tweet",
+    tags=["Tweets"]   
+)
+def update_a_tweet():
+    pass
+```
