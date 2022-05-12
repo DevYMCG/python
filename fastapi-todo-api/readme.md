@@ -487,3 +487,6 @@ El primer cambio que podéis ver es que hemos importado el router que acabamos d
 Por último, he eliminado el endpoint que creamos de ejemplo, ya que no lo necesitaremos.
 
 Listo, ya podemos probar nuestra API. Para ello levantamos el server si no lo hemos hecho y en nuestro navegador nos dirigimos a la siguiente url: http://127.0.0.1:8000/docs
+
+# Parte 4: Autenticación con JWT en FastAPI
+
