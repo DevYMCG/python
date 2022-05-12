@@ -791,3 +791,6 @@ def delete_a_tweet():
 def update_a_tweet():
     pass
 ```
+
+### Links recomendados
+https://cosasdedevs.com/posts/api-rest-fastapi-completa/
