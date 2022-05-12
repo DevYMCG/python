@@ -250,3 +250,17 @@ create_tables()
 ```
 
 Listo, si todo ha ido bien ya deberíamos tener creadas nuestras tablas en la base de datos.
+
+# Parte 3: Creación de modelos de Pydantic y nuestro primer usuario con FastAPI
+
+En esta tercera parte vamos a ver cómo realizar el enrutamiento desde un archivo diferente al main, añadiremos los modelos de Pydantic y crearemos nuestro primer usuario con FastAPI
+
+Crear modelos de Pydantic
+Como comentamos en el tutorial anterior, Pydantic es una librería de Python que se utiliza para la validación de datos. Como FastAPI dice en su documentación, este está basado en Pydantic así que será vital conocer su funcionamiento.
+
+Por eso, antes de seguir voy a comentar en que casos nos será útil usar Pydantic:
+
+- Definir requerimientos en la petición cuando nos envíen parámetros ya sea vía get, post, cabeceras, etc.
+- Convertir los datos recibidos en el tipo requerido. Por ejemplo si enviamos vía get un parámetro llamado is_done que será igual a true (ejemplo: http://localhost:8000/todo?is_done=true), nosotros lo recibiremos como string y Pydantic se encargará de convertirlo a booleano.
+- Validación de datos. Por ejemplo si necesitamos recibir un parámetro de tipo int validar que sea un número y si no lo es devolver un error en la respuesta.
+- Documentación. Una de las mejores cosas de FastAPI es que genera una página de documentación de forma automática. Desde los modelos de Pydantic (y en otras partes también) podemos definir información adicional como vamos a ver en este tutorial.
