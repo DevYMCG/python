@@ -121,3 +121,125 @@ Luego ejecutamos el comando
 ```
 flask run
 ```
+## Debugging en Flask
+
+**Debugging:** es el proceso de identificar y corregir errores de programación.
+
+Para activar el debug mode escribir lo siguiente en la consola:
+
+```
+set FLASK_DEBUG=1
+```
+
+**Logging:** es una grabación secuencial en un archivo o en una base de datos de todos los eventos que afectan a un proceso particular.
+
+Se utiliza en muchos casos distintos, para guardar información sobre la actividad de sistemas variados.
+
+Tal vez su uso más inmediato a nuestras actividades como desarrolladores web sería el logging de accesos al servidor web, que analizado da información del tráfico de nuestro sitio. Cualquier servidor web dispone de logs con los accesos, pero además, suelen disponer de otros logs, por ejemplo, de errores.
+
+Los sistemas operativos también suelen trabajar con logs, por ejemplo para guardar incidencias, errores, accesos de usuarios, etc.
+
+A través de el logs se puede encontrar información para detectar posibles problemas en caso de que no funcione algún sistema como debiera o se haya producido una incidencia de seguridad.
+
+### Request y Response
+
+Para usar el request tenemos que importarlo como se muestra en el codigo a continuación
+
+```python
+from flask import Flask, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    user_ip = request.remote_addr
+    return 'Hello Word Platzi, tu IP es {}'.format(user_ip)
+```
+
+### Ciclos de Request y Response
+
+**Request-Response:** es uno de los métodos básicos que usan las computadoras para comunicarse entre sí, en el que la primera computadora envía una solicitud de algunos datos y la segunda responde a la solicitud.
+
+Por lo general, hay una serie de intercambios de este tipo hasta que se envía el mensaje completo.
+
+**Por ejemplo:** navegar por una página web es un ejemplo de comunicación de request-response.
+
+Request-response se puede ver como una llamada telefónica, en la que se llama a alguien y responde a la llamada; es decir hacemos una petición y recibimos una respuesta.
+
+```python
+from flask import Flask, redirect, request, make_response
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    # Obtenemos la direccion ip del servidor
+    user_ip = request.remote_addr 
+    # redireccionamos al endpoint /hello
+    response = make_response(redirect('/hello'))
+    # Guardamos la ip en la cookie
+    response.set_cookie('user_ip',user_ip)
+
+    return response
+
+
+@app.route('/hello')
+def hello():
+    # Obtenemos la ip de la cookie
+    user_ip = request.cookies.get('user_ip')
+    # retornamos la ip
+    return 'Hello Word Platzi, tu IP es {}'.format(user_ip)
+```
+### Templates 
+
+**Template :** Es un archivo HTML que nos permite renderizar información estatica y dinamica. 
+
+Para renderizar un template se debe crear un archivo .html y llamarlo desde el main para esto hay que importar render_template.
+
+```python
+from flask import Flask, redirect, request, make_response, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    # Obtenemos la direccion ip del servidor
+    user_ip = request.remote_addr 
+    # redireccionamos al endpoint /hello
+    response = make_response(redirect('/hello'))
+    # Guardamos la ip en la cookie
+    response.set_cookie('user_ip',user_ip)
+
+    return response
+
+
+@app.route('/hello')
+def hello():
+    # Obtenemos la ip de la cookie
+    user_ip = request.cookies.get('user_ip')
+    # retornamos lo que haya en hello.html 
+    return render_template('hello.html', user_ip=user_ip)
+```
+
+y en el archivo .html
+
+```
+<h1>Hello Word Platzi, tu IP es {{ user_ip }}</h1>
+```
+
+### Estructuras de control
+
+Iteración: es la repetición de un segmento de código dentro de un programa de computadora. Puede usarse tanto como un término genérico (como sinónimo de repetición), así como para describir una forma específica de repetición con un estado mutable.
+
+Un ejemplo de iteración sería el siguiente:
+
+```python
+{% for key, segment in segment_details.items() %}
+        <tr>
+                <td>{{ key }}td>
+                <td>{{ segment }}td>
+        tr>
+{% endfor %}  
+```
+
+En este ejemplo estamos iterando por cada segment_details.items() para mostrar los campos en una tabla {{ key }} {{ segment }} de esta forma dependiendo de cuantos segment_details.items() haya se repetirá el código.
