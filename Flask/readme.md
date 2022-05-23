@@ -243,3 +243,89 @@ Un ejemplo de iteración sería el siguiente:
 ```
 
 En este ejemplo estamos iterando por cada segment_details.items() para mostrar los campos en una tabla {{ key }} {{ segment }} de esta forma dependiendo de cuantos segment_details.items() haya se repetirá el código.
+
+### Herencia de templates
+
+Macro: son un conjunto de comandos que se invocan con una palabra clave, opcionalmente seguidas de parámetros que se utilizan como código literal. Los Macros son manejados por el compilador y no por el ejecutable compilado.
+
+Los macros facilitan la actualización y mantenimiento de las aplicaciones debido a que su re-utilización minimiza la cantidad de código escrito necesario para escribir un programa.
+
+En este ejemplo nuestra macro se vería de la siguiente manera:
+
+```python
+{% macro nav_link(endpoint, text) %}
+    {% if request.endpoint.endswith(endpoint) %}
+        <li class="active"><a href="{{ url_for(endpoint) }}">{{text}}a>li>
+    {% else %}
+        <li><a href="{{ url_for(endpoint) }}">{{text}}a>li>
+    {% endif %}
+{% endmacro %}
+```
+
+Un ejemplo de uso de macros en Flask:
+
+```python
+{% from "macros.html" import nav_link with context %}
+
+<html lang="en">
+    <head>
+    {% block head %}
+        <title>My applicationtitle>
+    {% endblock %}
+    head>
+    <body>
+        <ul class="nav-list">
+            {{ nav_link('home', 'Home') }}
+            {{ nav_link('about', 'About') }}
+            {{ nav_link('contact', 'Get in touch') }}
+        ul>
+    {% block body %}
+    {% endblock %}
+    body>
+<html>
+```
+
+Como podemos observar en la primera línea estamos llamando a macros.html que contiene todos nuestros macros, pero queremos uno en específico así que escribimos import nav_link para traer el macro deseado y lo renderizamos de esta manera en nuestro menú {{ nav_link('home', 'Home') }}.
+
+### Herencia de templates
+
+**Macro:** son un conjunto de comandos que se invocan con una palabra clave, opcionalmente seguidas de parámetros que se utilizan como código literal. Los Macros son manejados por el compilador y no por el ejecutable compilado.
+
+Los macros facilitan la actualización y mantenimiento de las aplicaciones debido a que su re-utilización minimiza la cantidad de código escrito necesario para escribir un programa.
+
+En este ejemplo nuestra macro se vería de la siguiente manera:
+
+```html
+{% macro nav_link(endpoint, text) %}
+    {% if request.endpoint.endswith(endpoint) %}
+        <li class="active"><a href="{{ url_for(endpoint) }}">{{text}}a>li>
+    {% else %}
+        <li><a href="{{ url_for(endpoint) }}">{{text}}a>li>
+    {% endif %}
+{% endmacro %}
+```
+
+Un ejemplo de uso de macros en Flask:
+
+```html
+{% from "macros.html" import nav_link with context %}
+
+<html lang="en">
+    <head>
+    {% block head %}
+        <title>My applicationtitle>
+    {% endblock %}
+    head>
+    <body>
+        <ul class="nav-list">
+            {{ nav_link('home', 'Home') }}
+            {{ nav_link('about', 'About') }}
+            {{ nav_link('contact', 'Get in touch') }}
+        ul>
+    {% block body %}
+    {% endblock %}
+    body>
+html>
+```
+
+Como podemos observar en la primera línea estamos llamando a macros.html que contiene todos nuestros macros, pero queremos uno en específico así que escribimos import nav_link para traer el macro deseado y lo renderizamos de esta manera en nuestro menú {{ nav_link('home', 'Home') }}.
