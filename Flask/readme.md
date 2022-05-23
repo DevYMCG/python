@@ -461,4 +461,22 @@ def hello():
     return render_template('hello.html',**context)
 ```
 
-### Implementación de Flask-Bootstrap y Flask-WTF
+### Uso de método POST en Flask-WTF
+
+Flask acepta peticiones GET por defecto y por ende no debemos declararla en nuestras rutas.
+
+Pero cuando necesitamos hacer una petición POST al enviar un formulario debemos declararla de la siguiente manera, como en este ejemplo:
+
+```
+@app.route('/platzi-post', methods=['GET', 'POST'])
+```
+
+Debemos declararle además de la petición que queremos, GET, ya que le estamos pasando el parámetro methods para que acepte solo y únicamente las peticiones que estamos declarando.
+
+De esta forma, al actualizar el navegador ya podremos hacer la petición POST a nuestra ruta deseada y obtener la respuesta requerida.
+
+### Pruebas básicas con Flask-testing
+
+La etapa de pruebas se denomina testing y se trata de una investigación exhaustiva, no solo técnica sino también empírica, que busca reunir información objetiva sobre la calidad de un proyecto de software, por ejemplo, una aplicación móvil o un sitio web.
+
+El objetivo del testing no solo es encontrar fallas sino también aumentar la confianza en la calidad del producto, facilitar información para la toma de decisiones y detectar oportunidades de mejora.
