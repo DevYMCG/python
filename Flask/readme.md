@@ -329,3 +329,25 @@ html>
 ```
 
 Como podemos observar en la primera línea estamos llamando a macros.html que contiene todos nuestros macros, pero queremos uno en específico así que escribimos import nav_link para traer el macro deseado y lo renderizamos de esta manera en nuestro menú {{ nav_link('home', 'Home') }}.
+
+### Include y Links
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}Flask Platzi | {% endblock %}
+    </title>
+</head>
+<body>
+    <header>
+        {% include 'navbar.html' %}
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
+```
+
