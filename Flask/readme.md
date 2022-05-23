@@ -351,3 +351,14 @@ Como podemos observar en la primera línea estamos llamando a macros.html que co
 </html>
 ```
 
+### Uso de archivos estáticos: imágenes
+
+```python
+<nav>
+    <ul>
+        <img src="{{url_for('static', filename='images/platzi.webp')}}" alt="">
+        <li><a href="{{url_for('index')}}">Ir a inicio</a></li>
+        <li><a href="https://platzi.com/" target="_blank">Ir a Platzi</a></li>
+    </ul>
+</nav>
+```
