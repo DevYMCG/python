@@ -362,3 +362,103 @@ Como podemos observar en la primera línea estamos llamando a macros.html que co
     </ul>
 </nav>
 ```
+
+### Configurar páginas de error
+
+#### Códigos de error:
+
+**100:** no son errores sino mensajes informativos. Como usuario nunca los verás, sino que entre bambalinas indica que la petición se ha recibido y se continúa el proceso.
+
+**200:** estos códigos también indican que todo ha ido correctamente. La petición se ha recibido, se ha procesado y se ha devuelto satisfactoriamente. Por tanto, nunca los verás en tu navegador, pues significan que todo ha ido bien.
+
+**300:** están relacionados con redirecciones. Los servidores usan estos códigos para indicar al navegador que la página o recurso que han pedido se ha movido de sitio. Como usuario, no verás estos códigos, aunque gracias a ellos una página te podría redirigir automáticamente a otra.
+
+**400:** corresponden a errores del cliente y con frecuencia sí los verás. Es el caso del conocido error 404, que aparece cuando la página que has intentado buscar no existe. Es, por tanto, un error del cliente (la dirección web estaba mal).
+
+**500:** mientras que los códigos de estado 400 implican errores por parte del cliente (es decir, de parte tuya, tu navegador o tu conexión), los errores 500 son errores desde la parte del servidor. Es posible que el servidor tenga algún problema temporal y no hay mucho que puedas hacer salvo probar de nuevo más tarde.
+
+### Flask Bootstrap
+
+**Framework:** es un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo de problemática particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar.
+
+
+### Inicialización de librerias en Bootstrap
+
+```python
+from ensurepip import bootstrap
+from flask import Flask, redirect, request, make_response, render_template
+from flask_bootstrap import Bootstrap
+
+app = Flask(__name__)
+bootstrap = Bootstrap(app)
+```
+
+# Intalacion y actualización de librerias en requirements 
+
+```
+pip install -r requirements.txt
+```
+
+### Configuración de Flask
+
+Para activar el development mode debes escribir lo siguiente en la consola:
+
+```
+set FLASK_ENV=development
+echo $FLASK_ENV
+```
+
+**SESSION:** es un intercambio de información interactiva semipermanente, también conocido como diálogo, una conversación o un encuentro, entre dos o más dispositivos de comunicación, o entre un ordenador y usuario.
+
+Actualmente como se encuentran las cookies cualquier usuario puede modificarlas y cambiarlos incluso pudiera tener mas información entonces lo que haremos es encriptar esta cookie 
+
+## 1er paso crear una llave secreta
+
+```python
+app.config['SECRET_KEY'] = 'SUPER SECRETO'
+```
+
+y realizamos los cambios respectivos
+
+```python
+from flask import Flask, redirect, request, make_response, render_template, session
+from flask_bootstrap import Bootstrap
+
+app = Flask(__name__)
+bootstrap = Bootstrap(app)
+
+app.config['SECRET_KEY'] = 'SUPER SECRETO'
+
+todos = ['TODO 1', 'TODO 2', 'TODO 3']
+
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html', error=error)
+
+@app.errorhandler(500)
+def internal_server_error(error):
+    return render_template('500.html', error=error)
+
+@app.route('/')
+def index():
+    user_ip = request.remote_addr
+
+    response = make_response(redirect('/hello'))
+    session['user_ip']= user_ip
+
+    return response
+
+
+@app.route('/hello')
+def hello():
+    user_ip = session.get('user_ip')
+
+    context = {
+        'user_ip': user_ip,
+        'todos': todos
+    }
+
+    return render_template('hello.html',**context)
+```
+
+### Implementación de Flask-Bootstrap y Flask-WTF
