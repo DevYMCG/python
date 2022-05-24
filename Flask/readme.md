@@ -492,3 +492,8 @@ Correr los tests
 ```
 Flask test
 ```
+
+### Uso de Blueprints
+
+son una serie de rutas que podemos integrar en nuestra aplicacion pero en otro directorio es decir, me va a permitir modular la aplicación en pequeñas aplicaciones que hagan cosas específicas
+como autenticación o la parte de welcome, o si tenemos un dashboard de tareas por ejemplo también crearíamos un blueprint para las tareas específicas y es más fácil de manejar.
